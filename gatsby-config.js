@@ -4,7 +4,9 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Kalvin Chang 張郁騰`,
+    siteTitleAlt: `Kalvin Chang 張郁騰`,
+    siteImage: '/kuma-512x512.png'
   },
   plugins: [
     {
@@ -12,22 +14,38 @@ module.exports = {
       options: {
         navigation: [
           {
+            title: `About`,
+            slug: `/about`,
+          },
+          {
             title: `Blog`,
             slug: `/blog`,
           },
           {
-            title: `About`,
-            slug: `/about`,
+            title: `Resume`,
+            slug: `/resume`,
           },
+          {
+            title: `Projects`,
+            slug: `/projects`,
+          }
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Instagram`,
+            url: `https://instagram.com/kalvin_1204`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Github`,
+            url: `https://www.github.com/kalvinchang`,
+          },
+          {
+            name: `Gmail`,
+            url: `mailto:kalvinc@andrew.cmu.edu`,
+          },
+          {
+            name: `Spotify`,
+            url: `https://www.spotify.com/kalvin_1204`,
           },
         ],
       },
@@ -51,12 +69,12 @@ module.exports = {
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
+            src: `/kuma-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `/android-chrome-512x512.png`,
+            src: `/kuma-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
           },
