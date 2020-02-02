@@ -16,10 +16,10 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <ul className="header__pages">
-        <li>About</li>
-        <li>Blog</li>
-        <li>Resume</li>
-        <li>Contact me</li>
+        <li>about</li>
+        <li>blog</li>
+        <li>resume</li>
+        <li>contact</li>
       </ul>
   </header>
 )

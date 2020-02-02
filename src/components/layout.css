@@ -13,8 +13,6 @@ body {
     padding: 0;
     line-height: 1;
     font-family: 'Nanum Pen Script';
-    background: url('../images/background.jpg') no-repeat;
-    background-size: cover;
     font-smooth: always;
     -webkit-font-smoothing: antialised;
     -moz-osx-font-smoothing: grayscale;
@@ -46,7 +44,7 @@ header {
 
 header:hover {
     opacity: 1;
-    transition: background 200ms ease-out;
+    transition: background 400ms ease-out;
 }
 
 header h1 {

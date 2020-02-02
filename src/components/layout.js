@@ -7,38 +7,55 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import "normalize.css"
 import "./layout.css"
+import BackgroundImage from 'gatsby-background-image'
 
 import Header from "./header"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+const Layout = ({ children }) => (
+  <StaticQuery query={graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
         }
       }
+      desktop: file(relativePath: { eq: "background.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-      </div>
-    </>
-  )
-}
+  `}
+  render={data => {
+    const imageData = data.desktop.childImageSharp.fluid
+    return (
+      <>
+        <BackgroundImage fluid={imageData} style={{
+          height: '100vh',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}>
+        </BackgroundImage>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `0 1.0875rem 1.45rem`,
+          }}
+        >
+          <main>{children}</main>
+        </div>
+      </>
+    )
+  }}
+  />
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
