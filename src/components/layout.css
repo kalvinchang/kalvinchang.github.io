@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=League+Script&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, :after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'Nanum Pen Script';
+    background: url('../images/background.jpg') no-repeat;
+    background-size: cover;
+    font-smooth: always;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    opacity:0; 
+    filter:alpha(opacity=0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 1.45rem;
+    font-family: 'Helvetica';
+    font-weight: 100;
+    background-color: rgba(196, 196, 196, 0.75);
+    color: black;
+    position: fixed;
+    z-index: 400;
+}
+
+header:hover {
+    opacity: 1;
+    transition: background 200ms ease-out;
+}
+
+header h1 {
+    font-weight: 300;
+    margin-left: 5vw;
+}
+
+header ul {
+    font-size: 1.5rem;
+    list-style: none;
+    margin-right: 2vw;
+}
+
+header ul li {
+    padding: 0 1rem;
+    display: inline-block;
+}
