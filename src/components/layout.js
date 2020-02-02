@@ -13,6 +13,7 @@ import "./layout.css"
 import BackgroundImage from 'gatsby-background-image'
 
 import Header from "./header"
+import Notebook from "./notebook"
 
 const Layout = ({ children }) => (
   <StaticQuery query={graphql`
@@ -40,9 +41,18 @@ const Layout = ({ children }) => (
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div style={{textAlign: 'center'}}>
+            <Notebook style={{
+              height: '70vh',
+              width: '99vw',
+              position: 'fixed',
+              display: 'block',
+              top: '20vh'
+            }}/>
+          </div>
         </BackgroundImage>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        {/* <div
           style={{
             margin: `0 auto`,
             maxWidth: 960,
@@ -50,7 +60,7 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-        </div>
+        </div> */}
       </>
     )
   }}
