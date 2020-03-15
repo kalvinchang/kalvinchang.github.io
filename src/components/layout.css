@@ -76,7 +76,7 @@ header ul li {
 .paper {
     /* https://www.clairecodes.com/blog/2018-10-10-css-polka-dot-background/ */
     background-color: #FFFFFF;
-    background-image: radial-gradient(#d9d9fa 10%, transparent 10%);
+    background-image: radial-gradient(#d9d9fa 7.5%, transparent 5%);
     background-position: 0 0;
     background-size: 15px 15px;
     height: 95%;
