@@ -71,7 +71,6 @@ header ul li {
     height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .paper {
@@ -82,9 +81,17 @@ header ul li {
 }
 
 .left {
-    
+    justify-content: flex-end;
+}
+
+.left .paper {
+    margin-right: 5px;
 }
 
 .right {
-    
+    justify-content: flex-start;
+}
+
+.right .paper {
+    margin-left: 5px;
 }
