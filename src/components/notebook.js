@@ -6,9 +6,8 @@ const Notebook = () => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      // margin: '15vh 5vh 0 5vh',
-      width: '70vw',
-      height: '80vh',
+      margin: '20vh 5vh 0 5vh',
+      height: '70vh',
     }}>
       <div className='notebook-skin left'>
         <div className='paper'>

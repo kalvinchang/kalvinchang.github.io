@@ -66,10 +66,9 @@ header ul li {
 
 .notebook-skin {
     background: #161913;
-    border-radius: 1.0rem;
-    width: 100vw;
-    height: inherit;
-    flex: 1;
+    border-radius: 2.0rem;
+    width: 40vw;
+    height: 80vh;
     text-align: center;
 }
 
