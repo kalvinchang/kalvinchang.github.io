@@ -1,20 +1,25 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 const Notebook = () => {
-    const data = useStaticQuery(graphql`
-      query {
-        Image: file(relativePath: { eq: "notebook.png" }) {
-          childImageSharp {
-            fixed(width: 1000) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `)
-    return <Img fixed={data.Image.childImageSharp.fixed} alt='notebook'/>
-  }
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      // margin: '15vh 5vh 0 5vh',
+      width: '70vw',
+      height: '80vh',
+    }}>
+      <div className='notebook-skin left'>
+        <div className='paper'>
+        </div>
+      </div>
+      <div className='notebook-skin right'>
+        <div className='paper'>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default Notebook

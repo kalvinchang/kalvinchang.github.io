@@ -16,6 +16,7 @@ body {
     font-smooth: always;
     -webkit-font-smoothing: antialised;
     -moz-osx-font-smoothing: grayscale;
+    background: #F2F2F2;
 }
 
 ul {
@@ -61,4 +62,25 @@ header ul {
 header ul li {
     padding: 0 1rem;
     display: inline-block;
+}
+
+.notebook-skin {
+    background: #161913;
+    border-radius: 1.0rem;
+    width: 100vw;
+    height: inherit;
+    flex: 1;
+    text-align: center;
+}
+
+.left {
+    /* margin-left: 1vw; */
+}
+
+.right {
+    /* margin-right: 1vw; */
+}
+
+.paper {
+    
 }

@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "normalize.css"
 import "./layout.css"
-import BackgroundImage from 'gatsby-background-image'
 
 import Header from "./header"
 import Notebook from "./notebook"
@@ -33,34 +32,10 @@ const Layout = ({ children }) => (
     }
   `}
   render={data => {
-    const imageData = data.desktop.childImageSharp.fluid
     return (
       <>
-        <BackgroundImage fluid={imageData} style={{
-          height: '100vh',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <div style={{textAlign: 'center'}}>
-            <Notebook style={{
-              height: '70vh',
-              width: '99vw',
-              position: 'fixed',
-              display: 'block',
-              top: '20vh'
-            }}/>
-          </div>
-        </BackgroundImage>
-        {/* <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
-          }}
-        >
-          <main>{children}</main>
-        </div> */}
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <Notebook />
       </>
     )
   }}
