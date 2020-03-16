@@ -30,8 +30,8 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <Notebook right={
           <>
-            <p>This bullet journal belongs to:</p>
-            <h3>kalvin chang</h3>
+            <p>This notebook belongs to:</p>
+            <h1>kalvin chang</h1>
 
             <p>If lost, please return to</p>
             <p>626 Main St,</p>
