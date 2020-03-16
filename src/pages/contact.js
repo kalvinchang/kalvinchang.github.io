@@ -9,6 +9,7 @@ const ContactPage = () => {
             allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  relativeDirectory:{eq:"logos"}}) {
                 edges {
                     node {
+                      name
                         childImageSharp {
                           fluid(maxWidth: 100, maxHeight: 100) {
                                 ...GatsbyImageSharpFluid
@@ -26,14 +27,15 @@ const ContactPage = () => {
                         <h1>Contact me</h1>
                         <div>
                         {
-                          data.allFile.edges.map(edge => <Img fluid={edge.node.childImageSharp.fluid} className="logo" />
+                          data.allFile.edges.map(edge => 
+                            <div>
+                              <Img fluid={edge.node.childImageSharp.fluid} className="logo" />
+                              <p>{edge.node.name}</p>
+                            </div>
                           )
                         }
                         </div>
                     </>
-                }
-                right={
-                    <a>Spotify</a>
                 }
                 />
 }
