@@ -28,7 +28,18 @@ const Layout = ({ children }) => (
     return (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Notebook />
+        <Notebook right={
+          <>
+            <p>This bullet journal belongs to:</p>
+            <h3>kalvin chang</h3>
+
+            <p>If lost, please return to</p>
+            <p>626 Main St,</p>
+            <p>Los Angeles, CA 91745</p>
+            <p>or</p>
+            <p>台北市這個區不存在路六段9號</p>
+          </>
+        }/>
       </>
     )
   }}
