@@ -22,13 +22,6 @@ const Layout = ({ children }) => (
           title
         }
       }
-      desktop: file(relativePath: { eq: "background.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
     }
   `}
   render={data => {

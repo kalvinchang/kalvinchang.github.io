@@ -12,8 +12,6 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-family: 'Nanum Pen Script';
-    font-smooth: always;
     -webkit-font-smoothing: antialised;
     -moz-osx-font-smoothing: grayscale;
     background: #F2F2F2;
@@ -77,11 +75,21 @@ header ul li {
     /* https://www.clairecodes.com/blog/2018-10-10-css-polka-dot-background/ */
     background-color: #FFFFFF;
     background-image: radial-gradient(#d9d9fa 7.5%, transparent 5%);
-    background-position: 0 0;
+    background-position: 1vh 1vh;
     background-size: 15px 15px;
     height: 95%;
     width: 95%;
     border-radius: 0.5rem;
+    padding: 5%;
+    font-family: 'Nanum Pen Script';
+    font-weight: 100;
+}
+
+.paper h1 {
+    font-family: 'League Script', cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 0;
 }
 
 .left {
@@ -98,4 +106,9 @@ header ul li {
 
 .right .paper {
     margin-left: 5px;
+}
+
+#contact-me .logo {
+    height: 50px;
+    width: 50px;
 }

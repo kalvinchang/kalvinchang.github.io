@@ -1,6 +1,6 @@
 import React from "react"
 
-const Notebook = () => {
+const Notebook = (props) => {
   return (
     <div style={{
       display: 'flex',
@@ -11,10 +11,12 @@ const Notebook = () => {
     }}>
       <div className='notebook-skin left'>
         <div className='paper'>
+          {props.left}
         </div>
       </div>
       <div className='notebook-skin right'>
         <div className='paper'>
+          {props.right}
         </div>
       </div>
     </div>
