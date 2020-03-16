@@ -108,7 +108,8 @@ header ul li {
     margin-left: 5px;
 }
 
-#contact-me .logo {
-    height: 50px;
-    width: 50px;
+.logo {
+    height: 20%;
+    width: 20%;
+    margin: 20px;
 }

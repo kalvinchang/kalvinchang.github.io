@@ -10,7 +10,7 @@ const ContactPage = () => {
                 edges {
                     node {
                         childImageSharp {
-                          fluid {
+                          fluid(maxWidth: 100, maxHeight: 100) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -20,13 +20,14 @@ const ContactPage = () => {
         }
         `)
 
-    return <Notebook id="contact-me"
+    return <Notebook
                 left={
                     <>
                         <h1>Contact me</h1>
                         <div>
                         {
-                          data.allFile.edges.map(edge => <Img fluid={edge.node.childImageSharp.fluid} className="logo" />)
+                          data.allFile.edges.map(edge => <Img fluid={edge.node.childImageSharp.fluid} className="logo" />
+                          )
                         }
                         </div>
                     </>
