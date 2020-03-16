@@ -55,7 +55,7 @@ const ContactPage = () => {
                         <div>
                         {
                           data.allFile.edges.map(edge => 
-                            <div>
+                            <div className="logo-grid">
                               <Img fluid={edge.node.childImageSharp.fluid} className="logo" />
                               <a href={accounts[edge.node.name]["url"]}>{accounts[edge.node.name]["username"]}</a>
                             </div>

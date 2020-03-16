@@ -83,6 +83,7 @@ header ul li {
     padding: 5%;
     font-family: 'Nanum Pen Script';
     font-weight: 100;
+    font-size: 1.5rem;
 }
 
 .paper h1 {
@@ -108,8 +109,19 @@ header ul li {
     margin-left: 5px;
 }
 
+.logo-grid {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-grid a {
+    height: 20%;
+    width: 20%;
+    margin-left: 2rem;
+}
+
 .logo {
     height: 20%;
     width: 20%;
-    margin: 20px;
 }
