@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Kalvin Chang`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Kalvin Chang`,
     author: `kalvin`,
   },
   plugins: [
@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `static`,
+        path: `${__dirname}/static`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -18,11 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
         start_url: `/`,
-        display: `minimal-ui`,
-        icon: `src/images/kuma-512x512.png`, // This path is relative to the root of the site.
+        icon: `static/images/kuma-512x512.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
