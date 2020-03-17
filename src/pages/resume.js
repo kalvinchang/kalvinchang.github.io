@@ -46,10 +46,38 @@ const AboutPage = () => {
           <li>first web app</li>
         </ul>
 
+        <h1>fall 2018</h1>
+        <ul>
+          <li>15-122 Principles of Imperative Computation (Data Structures)</li>
+          <li>15-151 Mathematical Foundations of Computer Science (Intro Discrete Math)</li>
+          <li>21-241 Matrices and Linear Transformations (Linear Algebra)</li>
+          <li>08-180 Nature of Language (Intro Linguistics)</li>
+          <li>07-131 Great and Practical Ideas in Computer Science</li>
+        </ul>
+
+        <h1>spring 2019</h1>
+        <ul>
+          <li>15-150 Principles of Functional Programming</li>
+          <li>15-251 Great Ideas in Theoretical Computer Science</li>
+          <li>05-392 Interaction Design Overview</li>
+          <li>79-104 Global Histories</li>
+          <li>76-101 Interpretation and Argument</li>
+        </ul>
+
         <h1>hopscotch health</h1>
         <ul>
           <li>software engineering intern</li>
           <li>first internship</li>
+        </ul>
+
+        <h1>fall 2020</h1>
+        <ul>
+          <li>Teaching Assistant, 15-150 Principles of Functional Programming</li>
+          <li>11-411 Natural Language Processing</li>
+          <li>15-213 Intro to Computer Systems</li>
+          <li>05-391 Designing Human Centered Software</li>
+          <li>36-218 Probability Theory for Computer Scientists</li>
+          <li>33-104 Experimental Physics</li>
         </ul>
 
         <h1>piccollage</h1>
