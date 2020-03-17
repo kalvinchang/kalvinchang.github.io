@@ -5,11 +5,9 @@ const AboutPage = () => {
     return <Notebook
                 left={
                     <>
-                        <h1>about</h1>
+                        <h1>intro</h1>
                         <div>
-                          <p>los angeles / 626 • taipei</p>
-                          <p>cs • carnegie mellon '22 • glen a wilson '18</p>
-                          <p>he/him/his • 20</p>
+                          <p>insert vain attempt to make myself not seem boring blah blah</p>
                         </div>
                     </>
                 }

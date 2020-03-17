@@ -7,7 +7,7 @@ const Timeline = () => {
               <>
                 <h1>high school</h1>
                 <ul>
-                  <li>dictated by college apps TT</li>
+                  <li>life revolved around college apps TT</li>
                 </ul>
               </>
             }

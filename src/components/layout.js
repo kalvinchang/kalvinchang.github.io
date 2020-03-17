@@ -28,16 +28,20 @@ const Layout = ({ children }) => (
     return (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Notebook right={
+        <Notebook 
+        right={
           <>
             <p>This notebook belongs to:</p>
             <h1>kalvin chang</h1>
 
             <p>If lost, please return to</p>
-            <p>626 Main St,</p>
-            <p>Los Angeles, CA 91745</p>
+            <p>626 Main St, Los Angeles, CA 91745</p>
             <p>or</p>
             <p>台北市這個區不存在路六段9號</p>
+
+            <p>los angeles / 626 • taipei</p>
+            <p>cs • carnegie mellon '22 • glen a wilson '18</p>
+            <p>he/him/his • 20</p>
           </>
         }/>
       </>
