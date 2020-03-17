@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const ContactPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  relativeDirectory:{eq:"logos"}}) {
+            allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"}, relativeDirectory:{eq:"images/logos"}}) {
                 edges {
                     node {
                       name

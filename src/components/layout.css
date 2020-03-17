@@ -125,3 +125,8 @@ header ul li {
     height: 20%;
     width: 20%;
 }
+
+#resume {
+  width: 200px;
+  height: 400px;
+}
