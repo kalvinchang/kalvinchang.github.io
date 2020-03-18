@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import "normalize.css"
 import "./layout.css"
 
@@ -22,6 +23,13 @@ const Layout = ({ children }) => (
           title
         }
       }
+      name: file(relativePath: {eq: "images/name.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 300, maxHeight: 80) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `}
   render={data => {
@@ -29,19 +37,33 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Notebook 
+        hideLeft={true}
         right={
           <>
-            <p>This notebook belongs to:</p>
-            <h1>kalvin chang</h1>
+            <div id="belongs-to">
+              <p>This notebook belongs to:</p>
+              <br />
+              <Img fluid={data.name.childImageSharp.fluid}/>
 
-            <p>If lost, please return to</p>
-            <p>626 Main St, Los Angeles, CA 91745</p>
-            <p>or</p>
-            <p>台北市這個區不存在路六段9號</p>
+              <br />
+              <br />
+              <p>If found, please return to:</p>
+              <br />
+              <p>626 Main St, Los Angeles, CA 91745</p>
+              <br />
+              <p>台北市幸福路123巷0號8樓</p>
+            </div>
 
-            <p>los angeles / 626 • taipei</p>
-            <p>cs • carnegie mellon '22 • glen a wilson '18</p>
-            <p>he/him/his • 20</p>
+            <div id='mini-bio'>
+              <p>los angeles • taipei</p>
+              <p>cs • carnegie mellon '22 • glen a wilson '18</p>
+              <p>he/him/his • 20</p>
+              <br />
+              <p>pretending like i know what i'm doing
+              </p>
+              <br />
+              <p>我不知道我在幹嘛 好好喬裝一下吧</p>
+            </div>
           </>
         }/>
       </>
