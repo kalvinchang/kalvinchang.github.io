@@ -2,10 +2,18 @@ import React from "react"
 import Notebook from "../components/notebook"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Header from "../components/header"
 
 const ContactPage = () => {
     const data = useStaticQuery(graphql`
         query {
+          ruler: file(relativePath: {eq: "images/ruler.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 1000, maxHeight: 108) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
             allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"}, relativeDirectory:{eq:"images/logos"}}) {
                 edges {
                     node {
@@ -48,7 +56,9 @@ const ContactPage = () => {
       }
     }
 
-    return <Notebook
+    return (<>
+      <Header image={data.ruler.childImageSharp.fluid} />
+      <Notebook
                 left={
                     <>
                         <h1>Contact me</h1>
@@ -65,6 +75,7 @@ const ContactPage = () => {
                     </>
                 }
                 />
+    </>)
 }
 
 export default ContactPage

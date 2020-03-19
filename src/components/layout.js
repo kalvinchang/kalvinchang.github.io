@@ -30,12 +30,19 @@ const Layout = ({ children }) => (
           }
         }
       }
+      ruler: file(relativePath: {eq: "images/ruler.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, maxHeight: 108) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `}
   render={data => {
     return (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header image={data.ruler.childImageSharp.fluid} />
         <Notebook 
         hideLeft={true}
         right={

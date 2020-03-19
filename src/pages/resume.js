@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Notebook from "../components/notebook"
+import Header from "./../components/header"
 import "./../components/layout.css"
 
 const AboutPage = () => {
@@ -19,10 +20,20 @@ const AboutPage = () => {
         }
       }
     }
+    ruler: file(relativePath: {eq: "images/ruler.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000, maxHeight: 108) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `)
 
-  return <Notebook 
+  return (
+  <>
+  <Header image={data.ruler.childImageSharp.fluid} />
+  <Notebook 
     left={
       <>
         <div style={{display: 'flex', justifyContent: 'space-around'}}>
@@ -87,6 +98,8 @@ const AboutPage = () => {
       </>
     }
   />
+  </>
+  )
 }
 
 export default AboutPage

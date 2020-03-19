@@ -1,8 +1,24 @@
 import React from "react"
 import Notebook from "../components/notebook"
+import { useStaticQuery, graphql } from "gatsby"
+import Header from "../components/header"
 
 const AboutPage = () => {
-    return <Notebook
+  const data = useStaticQuery(graphql`
+    query {
+      ruler: file(relativePath: {eq: "images/ruler.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, maxHeight: 108) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+    return (
+    <>
+      <Header image={data.ruler.childImageSharp.fluid} />
+      <Notebook
                 left={
                     <>
                         <h1>intro</h1>
@@ -39,6 +55,7 @@ const AboutPage = () => {
                   </>
                 }
                 />
+    </>)
 }
 
 export default AboutPage
