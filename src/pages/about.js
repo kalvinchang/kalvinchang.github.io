@@ -16,7 +16,7 @@ const AboutPage = () => {
     }
   `)
     return (
-    <>
+    <div id="about">
       <Header image={data.ruler.childImageSharp.fluid} />
       <Notebook
                 left={
@@ -35,7 +35,6 @@ const AboutPage = () => {
                             <li>Night Flight - my first BL movie!</li>
                             <li>HIStory 2 越界</li>
                             <li>HIStory 3 圈套</li>
-                            <li>Long Time No See</li>
                             <li>Goblin</li>
                             <li>牽牛花開的日子</li>
                             <li>阿爸的願望</li>
@@ -53,9 +52,10 @@ const AboutPage = () => {
                           <h1>music</h1>
                           <ul>
                             <li>五月天 Mayday (since 2018)</li>
-                            <li>BTS (since 2016)</li>
+                            <li>BTS (since 2017)</li>
                             <li>草東沒派對 No Party for Cao Dong (since 2020)</li>
                             <li>Ellie Goulding (since 2014)</li>
+                            <li>OSTs from dramas</li>
                           </ul>
                         </div>
                     <div>
@@ -73,7 +73,7 @@ const AboutPage = () => {
                   </>
                 }
                 />
-    </>)
+    </div>)
 }
 
 export default AboutPage

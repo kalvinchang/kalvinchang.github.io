@@ -147,3 +147,9 @@ ul {
   width: 200px;
   height: 400px;
 }
+
+/* about page */
+#about ul {
+  list-style-position: inside;
+  line-height: 1.5;
+}
