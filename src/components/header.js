@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
 
+// get rid of spamming ruler issue by increasing img size
+
 const Header = ({ image }) => (
   <div className="ruler">
     <Img fluid={image} />

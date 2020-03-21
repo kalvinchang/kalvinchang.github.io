@@ -21,14 +21,6 @@ const AboutPage = () => {
       <Notebook
                 left={
                     <>
-                        <h1>intro</h1>
-                        <div>
-                          <p>insert vain attempt to make myself not seem boring blah blah</p>
-                        </div>
-                    </>
-                }
-                right={
-                  <>
                         <div>
                           <h1>interests</h1>
                           <ul>
@@ -38,12 +30,26 @@ const AboutPage = () => {
                           </ul>
                         </div>
                         <div>
-                          <h1>movies/shows</h1>
+                          <h1>movies / dramas</h1>
                           <ul>
-                            <li>TODO: insert list</li>
+                            <li>Night Flight - my first BL movie!</li>
+                            <li>HIStory 2 越界</li>
+                            <li>HIStory 3 圈套</li>
+                            <li>Long Time No See</li>
+                            <li>Goblin</li>
+                            <li>牽牛花開的日子</li>
+                            <li>阿爸的願望</li>
+                            <li>花甲大人轉少年</li>
+                            <li>兩個爸爸</li>
+                            <li>Some Day or One Day 想見你</li>
+                            <li>真愛找麻煩</li>
                           </ul>
                         </div>
-                        <div>
+                    </>
+                }
+                right={
+                  <>
+                    <div>
                           <h1>music</h1>
                           <ul>
                             <li>五月天 Mayday (since 2018)</li>
@@ -52,6 +58,18 @@ const AboutPage = () => {
                             <li>Ellie Goulding (since 2014)</li>
                           </ul>
                         </div>
+                    <div>
+                      <h1>bucketlist</h1>
+                      <ul>
+                        <li>insert stupid items</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h1>travels</h1>
+                      <ul>
+                        <li>insert places I've been to</li>
+                      </ul>
+                    </div>
                   </>
                 }
                 />
