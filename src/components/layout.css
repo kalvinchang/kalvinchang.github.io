@@ -95,6 +95,11 @@ ul {
   margin: 0;
 }
 
+.paper ul {
+  list-style-position: inside;
+  line-height: 1.5;
+}
+
 .left {
     justify-content: flex-end;
 }
@@ -131,13 +136,14 @@ ul {
 
 .logo-grid a {
     height: 20%;
-    width: 20%;
     margin-left: 2rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo {
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
 }
 
 
@@ -149,7 +155,3 @@ ul {
 }
 
 /* about page */
-#about ul {
-  list-style-position: inside;
-  line-height: 1.5;
-}
