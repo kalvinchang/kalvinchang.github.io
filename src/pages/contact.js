@@ -32,7 +32,7 @@ const ContactPage = () => {
     const accounts = {
       github: {
         username: 'kalvinchang',
-        url: 'github.com/kalvinchang'
+        url: 'https://github.com/kalvinchang'
       },
       gmail: {
         username: 'kalvinc@andrew.cmu.edu',
