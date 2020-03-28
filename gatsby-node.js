@@ -4,7 +4,7 @@ const path = require('path')
 const pages = {
   '/': path.resolve("src/layouts/index.js"),
   '/about': path.resolve("src/layouts/about.js"),
-  '/timeline': path.resolve("src/layouts/timeline.js"),
+  // '/timeline': path.resolve("src/layouts/timeline.js"),
   '/resume': path.resolve("src/layouts/resume.js"),
   '/contact': path.resolve("src/layouts/contact.js"),
 }

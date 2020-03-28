@@ -3,9 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Notebook from "../components/notebook"
 import Header from "../components/header"
-import "./../components/layout.css"
+import Nav from "../components/nav"
 
-const AboutPage = () => {
+const AboutPage = (props) => {
   const data = useStaticQuery(graphql`
   query {
     resumePdf: file(relativePath: {eq: "resume.pdf"}) {
@@ -27,12 +27,29 @@ const AboutPage = () => {
         }
       }
     }
+    leftArrow: file(relativePath: {eq: "images/icons/left_arrow.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 131, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    rightArrow: file(relativePath: {eq: "images/icons/right_arrow.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 131, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `)
 
   return (
   <>
   <Header image={data.ruler.childImageSharp.fluid} />
+  <Nav pageContext={props.pageContext}
+            leftArrow={data.leftArrow.childImageSharp.fluid}
+            rightArrow={data.rightArrow.childImageSharp.fluid} />
   <Notebook 
     left={
       <>

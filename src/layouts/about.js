@@ -2,8 +2,9 @@ import React from "react"
 import Notebook from "../components/notebook"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
+import Nav from "../components/nav"
 
-const AboutPage = () => {
+const AboutPage = (props) => {
   const data = useStaticQuery(graphql`
     query {
       ruler: file(relativePath: {eq: "images/ruler.png"}) {
@@ -13,11 +14,28 @@ const AboutPage = () => {
           }
         }
       }
+      leftArrow: file(relativePath: {eq: "images/icons/left_arrow.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 131, maxHeight: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      rightArrow: file(relativePath: {eq: "images/icons/right_arrow.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 131, maxHeight: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
     return (
     <div id="about">
       <Header image={data.ruler.childImageSharp.fluid} />
+      <Nav pageContext={props.pageContext}
+            leftArrow={data.leftArrow.childImageSharp.fluid}
+            rightArrow={data.rightArrow.childImageSharp.fluid} />
       <Notebook
                 left={
                     <>
