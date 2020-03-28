@@ -2,13 +2,17 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
+// TODO: make global or don't hardcode
+const pages = ['/', '/about', '/timeline', '/resume', '/contact']
+
 const Nav = (props) => {
+  // https://nickymeuleman.netlify.com/blog/gatsby-pagination
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 0
-  const isLast = currentPage === numPages
+  const isLast = currentPage === numPages - 1
   const prevPage = currentPage - 1 === 0 ? "/" : (currentPage - 1).toString()
-  const nextPage = (currentPage + 1).toString()
-  
+  const nextPage = currentPage + 1 < numPages ? pages[currentPage + 1] : null;
+
   return (
     <>
     {!isFirst && (
