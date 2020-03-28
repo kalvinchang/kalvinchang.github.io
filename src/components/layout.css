@@ -116,6 +116,24 @@ ul {
     margin-left: 5px;
 }
 
+/* nav arrows */
+.nav-arrow {
+  height: calc(100px * 0.8);
+  width: calc(131px * 0.8);
+  z-index: 400;
+  top: 25vh;
+}
+
+.left-arrow {
+  position: fixed;
+  left: 1vw;
+}
+
+.right-arrow {
+  position: fixed;
+  right: 1vw;
+}
+
 /* index */
 #belongs-to {
   text-align: center;

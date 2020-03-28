@@ -14,8 +14,9 @@ import "./layout.css"
 
 import Header from "./header"
 import Notebook from "./notebook"
+import Nav from "./nav"
 
-const Layout = ({ children }) => (
+const Layout = (props) => (
   <StaticQuery query={graphql`
     query SiteTitleQuery {
       site {
@@ -37,12 +38,29 @@ const Layout = ({ children }) => (
           }
         }
       }
+      leftArrow: file(relativePath: {eq: "images/icons/left_arrow.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 131, maxHeight: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      rightArrow: file(relativePath: {eq: "images/icons/right_arrow.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 131, maxHeight: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `}
   render={data => {
     return (
       <>
         <Header image={data.ruler.childImageSharp.fluid} />
+        <Nav pageContext={props.pageContext}
+            leftArrow={data.leftArrow.childImageSharp.fluid}
+            rightArrow={data.rightArrow.childImageSharp.fluid} />
         <Notebook 
         hideLeft={true}
         right={
