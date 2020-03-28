@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Notebook from "../components/notebook"
-import Header from "./../components/header"
+import Header from "../components/header"
 import "./../components/layout.css"
 
 const AboutPage = () => {
