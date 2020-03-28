@@ -92,6 +92,7 @@ const ContactPage = (props) => {
                         </div>
                     </>
                 }
+                hideRight={true}
                 />
     </>)
 }

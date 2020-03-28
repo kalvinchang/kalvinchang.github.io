@@ -17,9 +17,11 @@ const Notebook = (props) => {
         }
       </div>
       <div className='notebook-skin right'>
-        <div className='paper'>
-          {props.right}
-        </div>
+        {!props.hideRight &&
+          <div className='paper'>
+            {props.right}
+          </div>
+        }
       </div>
     </div>
   )
