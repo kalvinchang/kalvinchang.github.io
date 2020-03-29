@@ -183,13 +183,18 @@ ul {
   height: 4.32vw;
   width: 6vw;
   position: absolute;
-  right: 0;
+  right: -.5vw;
 }
 
 .download {
   width: 4.32vw;
   height: 6vw;
   z-index: 100;
+}
+
+.year {
+  position: absolute;
+  right: 3vw;
 }
 
 /* about page */

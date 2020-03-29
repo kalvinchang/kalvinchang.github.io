@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import Notebook from "../components/notebook"
-import Header from "../components/header"
-import Nav from "../components/nav"
+import Notebook from "../../components/notebook"
+import Header from "../../components/header"
+import Nav from "../../components/nav"
 
 
-const AboutPage = (props) => {
+const ResumePage = (props) => {
   const data = useStaticQuery(graphql`
   query {
     resumePdf: file(relativePath: {eq: "resume.pdf"}) {
@@ -78,55 +78,20 @@ const AboutPage = (props) => {
     }
     right={
       <>
+        <h1 className="year">2019-20</h1>
         <h3>piccollage</h3>
         <ul>
           <li>server developer intern</li>
         </ul>
 
-        <h3>fall 2019 - sophomore</h3>
+        <h3>sophomore fall</h3>
         <ul>
-          <li>Teaching Assistant, 15-150 Principles of Functional Programming</li>
+          <li>Teaching Assis., 15-150 Princ. Functional Programming</li>
           <li>11-411 Natural Language Processing</li>
           <li>15-213 Intro to Computer Systems</li>
           <li>05-391 Designing Human Centered Software</li>
           <li>36-218 Probability Theory for Computer Scientists</li>
           <li>33-104 Experimental Physics</li>
-        </ul>
-
-        <h3>hopscotch health</h3>
-        <ul>
-          <li>software engineering intern</li>
-          <li>first internship</li>
-        </ul>
-
-        <h3>spring 2019 - freshman</h3>
-        <ul>
-          <li>15-150 Principles of Functional Programming</li>
-          <li>15-251 Great Ideas in Theoretical Computer Science</li>
-          <li>05-392 Interaction Design Overview</li>
-          <li>79-104 Global Histories</li>
-          <li>76-101 Interpretation and Argument</li>
-        </ul>
-
-        <h3>fall 2018 - freshman</h3>
-        <ul>
-          <li>15-122 Principles of Imperative Computation (Data Structures)</li>
-          <li>15-151 Mathematical Foundations of Computer Science (Intro Discrete Math)</li>
-          <li>21-241 Matrices and Linear Transformations (Linear Algebra)</li>
-          <li>08-180 Nature of Language (Intro Linguistics)</li>
-          <li>07-131 Great and Practical Ideas in Computer Science</li>
-        </ul>
-
-        <h3>glen a. wilson code</h3>
-        <ul>
-          <li>founder, president</li>
-          <li>first experience with leadership</li>
-        </ul>
-
-        <h3>aftermath</h3>
-        <ul>
-          <li>project lead + full stack</li>
-          <li>first web app</li>
         </ul>
       </>
     }
@@ -135,4 +100,4 @@ const AboutPage = (props) => {
   )
 }
 
-export default AboutPage
+export default ResumePage

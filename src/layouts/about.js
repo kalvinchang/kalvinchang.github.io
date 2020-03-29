@@ -45,6 +45,7 @@ const AboutPage = (props) => {
                             <li>food</li>
                             <li>travel</li>
                             <li>Mandarin</li>
+                            <li>too many more i'm inconsistent with xD</li>
                           </ul>
                         </div>
                         <div>
@@ -71,7 +72,7 @@ const AboutPage = (props) => {
                           <ul>
                             <li>五月天 Mayday (since 2018)</li>
                             <li>BTS (since 2017)</li>
-                            <li>草東沒派對 No Party for Cao Dong (since 2020)</li>
+                            <li>周杰倫 Jay Chou (since 2007?)</li>
                             <li>Ellie Goulding (since 2014)</li>
                             <li>OSTs from dramas</li>
                           </ul>

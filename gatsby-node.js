@@ -5,7 +5,9 @@ const pages = {
   '/': path.resolve("src/layouts/index.js"),
   '/about': path.resolve("src/layouts/about.js"),
   // '/timeline': path.resolve("src/layouts/timeline.js"),
-  '/resume': path.resolve("src/layouts/resume.js"),
+  '/resume': path.resolve("src/layouts/resume/1.js"),
+  '/resume/2': path.resolve("src/layouts/resume/2.js"),
+  '/resume/3': path.resolve("src/layouts/resume/3.js"),
   '/contact': path.resolve("src/layouts/contact.js"),
 }
 
