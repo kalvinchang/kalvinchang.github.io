@@ -168,20 +168,24 @@ ul {
 /* resume page */
 
 #resume {
-  width: 200px;
-  height: 400px;
+  position: relative;
+  top: -2.5vh;
+  margin: 0 auto;
+  width: 31vw;
+  height: 55vh;
 }
 
 .download-link {
   height: 4.32vw;
   width: 6vw;
   position: absolute;
-  right: 2vw;
+  right: 0;
 }
 
 .download {
   width: 4.32vw;
   height: 6vw;
+  z-index: 100;
 }
 
 /* about page */
