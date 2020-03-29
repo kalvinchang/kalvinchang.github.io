@@ -1,14 +1,34 @@
 import React from "react"
+import Notebook from "../components/notebook"
+import Header from "../components/header"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const NotFoundPage = ({ pageContext }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      ruler: file(relativePath: {eq: "images/ruler.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, maxHeight: 108) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+  return (
+    <>
+      <Header image={data.ruler.childImageSharp.fluid} />
+      <Notebook 
+        left={
+          <h1>how did you get here???</h1>
+        }
+        right={
+          <h1>shhh this page is secret</h1>
+        }
+      />
+    </>
+  )
+}
 
 export default NotFoundPage
