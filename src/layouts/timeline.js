@@ -30,7 +30,7 @@ const Timeline = () => {
 
                 <h1>fall 2019</h1>
                 <ul>
-                  <li>passing in the amily</li>
+                  <li>passing in the family</li>
                 </ul>
 
                 <h1>spring 2020</h1>

@@ -45,7 +45,7 @@ const AboutPage = (props) => {
                             <li>food</li>
                             <li>travel</li>
                             <li>Mandarin</li>
-                            <li>too many more i'm inconsistent with xD</li>
+                            <li>+100 others with which i'm inconsistent xD</li>
                           </ul>
                         </div>
                         <div>
@@ -60,7 +60,6 @@ const AboutPage = (props) => {
                             <li>花甲大人轉少年</li>
                             <li>兩個爸爸</li>
                             <li>Some Day or One Day 想見你</li>
-                            <li>真愛找麻煩</li>
                           </ul>
                         </div>
                     </>
@@ -80,13 +79,13 @@ const AboutPage = (props) => {
                     <div>
                       <h1>bucketlist</h1>
                       <ul>
-                        <li>insert stupid items</li>
+                        <li>&lt;insert boring shit boring people want to do&gt;</li>
                       </ul>
                     </div>
                     <div>
                       <h1>travels</h1>
                       <ul>
-                        <li>insert places I've been to</li>
+                        <li>&lt;pretend like my world isn't small&gt;</li>
                       </ul>
                     </div>
                   </>

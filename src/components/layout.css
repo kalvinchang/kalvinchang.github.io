@@ -140,6 +140,7 @@ ul {
 
 /* index */
 #belongs-to {
+  margin-top: 1rem;
   text-align: center;
 }
 

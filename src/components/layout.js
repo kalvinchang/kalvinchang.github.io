@@ -76,7 +76,7 @@ const Layout = (props) => (
               <br />
               <p>626 Main St, Los Angeles, CA 91745</p>
               <br />
-              <p>台北市幸福路123巷0號8樓</p>
+              <p>台北市幸福路123巷0號4樓</p>
             </div>
 
             <div id='mini-bio'>
@@ -87,7 +87,7 @@ const Layout = (props) => (
               <p>pretending like i know what i'm doing
               </p>
               <br />
-              <p>我不知道我在幹嘛 好好喬裝一下吧</p>
+              <p>我不知道我在幹嘛</p>
             </div>
           </>
         }/>
