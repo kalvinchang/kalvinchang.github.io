@@ -1,9 +1,10 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Notebook from "../components/notebook"
 import Header from "../components/header"
 import Nav from "../components/nav"
+
 
 const AboutPage = (props) => {
   const data = useStaticQuery(graphql`
@@ -16,6 +17,13 @@ const AboutPage = (props) => {
     resumePng: file(relativePath: {eq: "resume.png"}) {
       childImageSharp {
         fluid(maxWidth: 463, maxHeight: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    download: file(relativePath: {eq: "images/icons/download.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 72, maxHeight: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -53,9 +61,13 @@ const AboutPage = (props) => {
   <Notebook 
     left={
       <>
-        <div style={{display: 'flex', justifyContent: 'space-around'}}>
+        <div style={{display: 'flex', justifyContent: 'space-between'}}>
           <h1>Resume</h1>
-          <a href={data.resumePdf.publicURL}>Link</a>
+          <div className="download-link">
+            <Link to={data.resumePdf.publicURL}>
+              <Img fluid={data.download.childImageSharp.fluid} className="download" alt="Download my resume"></Img>
+            </Link>
+          </div>
         </div>
         <Img fluid={data.resumePng.childImageSharp.fluid} id="resume" alt="My resume"></Img>
       </>

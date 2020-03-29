@@ -172,4 +172,16 @@ ul {
   height: 400px;
 }
 
+.download-link {
+  height: 4.32vw;
+  width: 6vw;
+  position: absolute;
+  right: 2vw;
+}
+
+.download {
+  width: 4.32vw;
+  height: 6vw;
+}
+
 /* about page */
