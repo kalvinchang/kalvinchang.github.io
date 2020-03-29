@@ -84,11 +84,15 @@ ul {
     font-size: 1.5rem;
 }
 
-.paper h1 {
+.paper h1, h3 {
     font-family: 'League Script', cursive;
     font-size: 3.5rem;
     font-weight: 400;
-    margin: 1rem 0;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.paper h3 {
+  font-size: 2.5rem;
 }
 
 .paper p {
