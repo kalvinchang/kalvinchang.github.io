@@ -1,8 +1,8 @@
 import React from "react"
-import Notebook from "../components/notebook"
+import Notebook from "../../components/notebook"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "../components/header"
-import Nav from "../components/nav"
+import Header from "../../components/header"
+import Nav from "../../components/nav"
 
 const AboutPage = (props) => {
   const data = useStaticQuery(graphql`
