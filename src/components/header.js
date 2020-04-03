@@ -10,7 +10,7 @@ const Header = ({ image }) => (
     <Img fluid={image} />
     <nav>
       <Link to="/">front cover</Link>
-      <Link to="/about/about">about</Link>
+      <Link to="/about">about</Link>
       {/* <Link to="/blog">blog</Link> */}
       <Link to="/resume">resume</Link>
       <Link to="/contact">contact</Link>
