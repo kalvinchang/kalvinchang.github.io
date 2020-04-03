@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Kalvin Chang`,
-    description: `Kalvin Chang`,
+    description: `Personal website`,
     author: `kalvin`,
   },
   plugins: [
@@ -11,6 +11,19 @@ module.exports = {
       options: {
         name: `static`,
         path: `${__dirname}/static`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`,
       },
     },
     `gatsby-transformer-sharp`,
