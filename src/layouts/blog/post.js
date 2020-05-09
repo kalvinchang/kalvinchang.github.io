@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../../components/header"
 import Nav from "../../components/nav"
 
-const BlogEntriesPage = (props) => {
+const BlogPost = (props) => {
   const data = useStaticQuery(graphql`
     query {
       ruler: file(relativePath: {eq: "images/ruler.png"}) {
@@ -28,22 +28,6 @@ const BlogEntriesPage = (props) => {
           }
         }
       }
-
-      posts: allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
-      ) {
-        nodes {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            title
-            date
-          }
-          fields {
-            slug
-          }
-        }
-      }
     }
   `)
     return (
@@ -53,19 +37,15 @@ const BlogEntriesPage = (props) => {
             leftArrow={data.leftArrow.childImageSharp.fluid}
             rightArrow={data.rightArrow.childImageSharp.fluid} />
       <Notebook left={
-        <div>
-          <h1 className="page-title">Index</h1>
-          <ul className="dot-leaders">
-          {data.posts.nodes.map(({ excerpt, frontmatter, fields }) => (
-            <li>
-              <a href={fields.slug} className="blog-title">Blog title</a>
-              <p className="page">page</p>
-            </li>
-          ))}
-          </ul>
-        </div>
+        <>
+          <h1>Index</h1>
+          <p>Blog title</p>
+        </>
+      } right={
+        <>
+        </>
       }/>
     </div>)
 }
 
-export default BlogEntriesPage
+export default BlogPost

@@ -1,6 +1,8 @@
 const path = require('path')
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 // TODO: array?? don't hardcode and get from filepath???
+// TODO: React hook
 const pages = {
   '/': path.resolve("src/layouts/index.js"),
   '/about': path.resolve("src/layouts/about/collections.js"),
@@ -12,8 +14,23 @@ const pages = {
   '/contact': path.resolve("src/layouts/contact.js"),
 }
 
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === `Mdx`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
+  const blogPostTemplate = path.resolve(
+    'src/layouts/blog/post.js'
+  )
 
   const pageKeys = Object.keys(pages);
   pageKeys.forEach((route, i) => {
@@ -24,6 +41,38 @@ exports.createPages = ({ graphql, actions }) => {
         currentPage: i,
         numPages: pageKeys.length // TODO: self?? this??
       },
+    })
+  })
+
+  return graphql(`
+    {
+      posts: allMdx {
+        nodes {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      throw result.errors
+    }
+
+    const posts = result.data.posts.nodes
+
+    // create page for each mdx file
+    posts.forEach(post => {
+      createPage({
+        path: post.fields.slug,
+        component: blogPostTemplate,
+        context: {
+          slug: post.fields.slug,
+        },
+      })
     })
   })
 }
