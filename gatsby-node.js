@@ -31,7 +31,6 @@ exports.createPages = ({ graphql, actions }) => {
   const blogPostTemplate = path.resolve(
     'src/layouts/blog/post.js'
   )
-
   const pageKeys = Object.keys(pages);
   pageKeys.forEach((route, i) => {
     createPage({
@@ -46,7 +45,9 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     {
-      posts: allMdx {
+      posts: allMdx(
+        sort: { fields: [frontmatter___date], order: DESC }
+      ) {
         nodes {
           fields {
             slug
@@ -65,16 +66,25 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.posts.nodes
 
     // create page for each mdx file
-    posts.forEach(post => {
+    posts.forEach((post, index) => {
+      const next = index === posts.length - 1 ? null : posts[index + 1]
+      const previous = index === 0 ? null : posts[index - 1]
+
       createPage({
         path: post.fields.slug,
         component: blogPostTemplate,
         context: {
           slug: post.fields.slug,
+          previous,
+          next,
+          blog: true, // TODO: pick from blog??
         },
       })
     })
   })
 }
 
-// need to figure out how to paginate resume and about (should fall under same route but multiple pages within)
+// should blog previous next link to the rest of the website?
+// what if post takes several pages?
+
+// TODO: need to figure out how to paginate resume and about (should fall under same route but multiple pages within)
