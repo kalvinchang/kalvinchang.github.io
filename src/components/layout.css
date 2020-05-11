@@ -250,3 +250,14 @@ ul {
 .dot-leaders .page {
   margin-bottom: 0.4em;
 } */
+
+/* blog post template */
+#blog-post header h1 {
+  display: inline;
+}
+
+#blog-post header .date {
+  position: absolute;
+  right: 0.5em;
+  font-size: 1.75em;
+}
