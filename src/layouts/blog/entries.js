@@ -56,10 +56,11 @@ const BlogEntriesPage = (props) => {
         <div>
           <h1 className="page-title">Index</h1>
           <ul className="dot-leaders">
-          {data.posts.nodes.map(({ excerpt, frontmatter, fields }) => (
+          {data.posts.nodes.map(({ excerpt, id, frontmatter, fields }, index) => (
+            // add page numbering that reflects length of post
             <li>
-              <a href={fields.slug} className="blog-title">Blog title</a>
-              <p className="page">page</p>
+              <a href={fields.slug} className="blog-title">{frontmatter.title}</a>
+              <p className="page">{index + 1}</p>
             </li>
           ))}
           </ul>

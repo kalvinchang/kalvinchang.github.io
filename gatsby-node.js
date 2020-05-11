@@ -77,7 +77,7 @@ exports.createPages = ({ graphql, actions }) => {
           slug: post.fields.slug,
           previous,
           next,
-          blog: true, // TODO: pick from blog??
+          blog: true,
         },
       })
     })

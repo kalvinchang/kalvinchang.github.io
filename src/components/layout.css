@@ -223,6 +223,9 @@ ul {
 .dot-leaders li a {
   text-decoration: none;
   color: #000;
+  width: 80%;
+  line-height: 1;
+  margin: 0.25em 0;
 }
 
 .dot-leaders li p {
