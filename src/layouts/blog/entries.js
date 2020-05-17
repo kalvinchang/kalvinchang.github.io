@@ -52,20 +52,25 @@ const BlogEntriesPage = (props) => {
       <Nav pageContext={props.pageContext}
             leftArrow={data.leftArrow.childImageSharp.fluid}
             rightArrow={data.rightArrow.childImageSharp.fluid} />
-      <Notebook left={
-        <div>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '15vh 0 0 0',
+        }}>
+        <div className='paper notepad'>
           <h1 className="page-title">Index</h1>
           <ul className="dot-leaders">
           {data.posts.nodes.map(({ excerpt, id, frontmatter, fields }, index) => (
             // add page numbering that reflects length of post
             <li>
-              <a href={fields.slug} className="blog-title">{frontmatter.title}</a>
               <p className="page">{index + 1}</p>
+              <a href={fields.slug} className="blog-title">{frontmatter.title}</a>
             </li>
           ))}
           </ul>
         </div>
-      }/>
+      </div>
     </div>)
 }
 

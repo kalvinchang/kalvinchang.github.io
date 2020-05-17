@@ -15,18 +15,20 @@ const BlogPost = (props) => {
       <Nav pageContext={props.pageContext}
             leftArrow={data.leftArrow.childImageSharp.fluid}
             rightArrow={data.rightArrow.childImageSharp.fluid} />
-      <Notebook left={
-        <>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '15vh 0 0 0',
+        }}>
+        <div className='paper notepad'>
           <header>
             <h1>{frontmatter.title}</h1>
             <span className="date">{frontmatter.date}</span>
           </header>
           <MDXRenderer>{body}</MDXRenderer>
-        </>
-      } right={
-        <>
-        </>
-      }/>
+        </div>
+      </div>
     </div>)
 }
 
