@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 // TODO: make global or don't hardcode
-const pages = ['/', '/about', '/about/timeline', '/blog', '/resume', '/resume/2', '/resume/3', '/contact']
+const pages = ['/', '/about', '/about/timeline', '/resume', '/resume/2', '/resume/3', '/contact', '/blog']
 
 const Nav = (props) => {
   // https://nickymeuleman.netlify.com/blog/gatsby-pagination
