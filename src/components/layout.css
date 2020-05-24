@@ -59,7 +59,6 @@ ul {
 /* notebook */
 .notebook-skin {
     background: #161913;
-    border-radius: 2.0rem;
     width: 40vw;
     height: 90vh;
     position: relative;
@@ -68,15 +67,27 @@ ul {
     align-items: center;
 }
 
+.skin-left {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  box-shadow: -2px 15px 31px -9px rgba(0,0,0,0.5);
+}
+
+.skin-right {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  box-shadow: 15px 15px 31px -20px rgba(0,0,0,0.5);
+}
+
 .paper {
     /* https://www.clairecodes.com/blog/2018-10-10-css-polka-dot-background/ */
     background-color: #FFFFFF;
     background-image: radial-gradient(#d9d9fa 7.5%, transparent 5%);
     background-position: 1vh 1vh;
     background-size: 15px 15px;
-    height: 95%;
-    width: 95%;
-    border-radius: 0.5rem;
+    height: 100%;
+    width: 97.5%;
+    margin-bottom: 2.5%;
     padding: 1% 5% 5% 5%;
     color: #0b0b0b;
     font-family: 'Nanum Pen Script';
@@ -105,19 +116,27 @@ ul {
 }
 
 .left {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .left .paper {
-    margin-right: 5px;
+  margin-right: 0px;
+  border-top-left-radius: 2.0rem;
+  border-bottom-left-radius: 2.0rem;
+  border-right: 1px solid #514933;
+  box-shadow: inset -10px -5px 10px -10px rgba(0,0,0,0.5);
 }
 
 .right {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .right .paper {
-    margin-left: 5px;
+  margin-left: 0px;
+  border-top-right-radius: 2.0rem;
+  border-bottom-right-radius: 2.0rem;
+  border-left: 1px solid #514933;
+  box-shadow: inset 10px -5px 10px -10px rgba(0,0,0,0.5);
 }
 
 /* nav arrows */

@@ -9,14 +9,14 @@ const Notebook = (props) => {
       margin: '15vh 5vh 0 5vh',
       height: '70vh',
     }}>
-      <div className='notebook-skin left'>
+      <div className='notebook-skin left skin-left'>
         {!props.hideLeft &&
           <div className='paper'>
             {props.left}
           </div>
         }
       </div>
-      <div className='notebook-skin right'>
+      <div className='notebook-skin right skin-right'>
         {!props.hideRight &&
           <div className='paper'>
             {props.right}
