@@ -218,3 +218,61 @@ ul {
 }
 
 /* about page */
+
+/* blog index */
+#blog-list .page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dot-leaders {
+  list-style: none;
+}
+
+.dot-leaders li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.dot-leaders li a {
+  text-decoration: none;
+  color: #000;
+  width: 80%;
+  line-height: 1;
+  margin: 0.25em 0;
+}
+
+/* blog post template */
+.notepad {
+  width: 60%;
+  min-height: 70vh;
+  border-radius: 0;
+  box-shadow: 0px 15px 31px -9px rgba(0,0,0,0.5);
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+#blog-post header {
+  padding-top: 1rem;
+}
+
+#blog-post header h1 {
+  display: inline;
+}
+
+#blog-post header .date {
+  float: right;
+  font-size: 1.75em;
+}
+
+#blog-post .notepad {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#blog-post p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}

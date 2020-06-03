@@ -11,9 +11,9 @@ const Header = ({ image }) => (
     <nav>
       <Link to="/">front cover</Link>
       <Link to="/about">about</Link>
-      {/* <Link to="/blog">blog</Link> */}
       <Link to="/resume">resume</Link>
       <Link to="/contact">contact</Link>
+      <Link to="/blog">blog</Link>
     </nav>
   </div>
 )
