@@ -6,7 +6,7 @@ const Notebook = (props) => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      margin: '15vh 5vh 0 5vh',
+      margin: '12.5vh 5vh 0 5vh',
       height: '70vh',
     }}>
       <div className='notebook-skin left skin-left'>
