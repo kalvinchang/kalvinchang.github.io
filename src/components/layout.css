@@ -151,11 +151,13 @@ ul {
 
 .left-arrow {
   position: fixed;
+  top: 40vh;
   left: 1vw;
 }
 
 .right-arrow {
   position: fixed;
+  top: 40vh;
   right: 1vw;
 }
 

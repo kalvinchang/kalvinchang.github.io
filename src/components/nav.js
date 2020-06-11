@@ -1,4 +1,5 @@
 import React from "react"
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -26,12 +27,12 @@ const Nav = (props) => {
     <>
     {!isFirst && (
       <Link to={prevPage} rel="prev" className="left-arrow">
-        <Img fluid={props.leftArrow} className="nav-arrow" />
+        <IoIosArrowDropleft className="nav-arrow" color="#000" />
       </Link>
     )}
     {!isLast && (
       <Link to={nextPage} rel="next" className="right-arrow">
-        <Img fluid={props.rightArrow} className="nav-arrow" />
+        <IoIosArrowDropright className="nav-arrow" color="#000" />
       </Link>
     )}
     </>
