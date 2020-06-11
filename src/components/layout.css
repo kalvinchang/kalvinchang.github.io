@@ -249,16 +249,16 @@ ul {
 
 /* blog post template */
 .notepad {
-  width: 60%;
-  min-height: 70vh;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   border-radius: 0;
-  box-shadow: 0px 15px 31px -9px rgba(0,0,0,0.5);
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 2rem 20rem 4rem 20rem;
+  margin-bottom: 0;
 }
 
 #blog-post header {
-  padding-top: 1rem;
+  padding: 1.5rem 0;
 }
 
 #blog-post header h1 {
@@ -270,13 +270,9 @@ ul {
   font-size: 1.75em;
 }
 
-#blog-post .notepad {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 #blog-post p {
   font-size: 2rem;
   margin-top: 1rem;
   margin-right: 1rem;
+  text-align: justify;
 }

@@ -56,7 +56,7 @@ const BlogEntriesPage = (props) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: '15vh 0 0 0',
+        margin: '10vh 0 0 0',
         }}>
         <div className='paper notepad'>
           <h1 className="page-title">Index</h1>
