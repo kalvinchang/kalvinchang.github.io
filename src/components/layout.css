@@ -28,11 +28,12 @@ ul {
   width: 100%;
   z-index: 0;
   position: fixed;
-  top: 30vh;
-  transform: rotate(355deg);
+  top: 1vh;
+  opacity: 0.65;
 }
 
 .ruler:hover {
+  opacity: 1;
   z-index: 400;
 }
 
