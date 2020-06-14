@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "normalize.css"
-import "./layout.css"
 
 import Header from "./header"
 import Notebook from "./notebook"
