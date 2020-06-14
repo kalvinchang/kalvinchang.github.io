@@ -15,6 +15,7 @@ const ResumePage = (props) => {
       publicURL
     }
     resumePng: file(relativePath: {eq: "resume.png"}) {
+      publicURL
       childImageSharp {
         fluid(maxWidth: 450, maxHeight: 600) {
           ...GatsbyImageSharpFluid
@@ -64,9 +65,9 @@ const ResumePage = (props) => {
         <div style={{display: 'flex', justifyContent: 'space-between'}}>
           <h1>Resume</h1>
           <div className="download-link">
-            <Link to={data.resumePdf.publicURL}>
+            <a href={data.resumePdf.publicURL} download>
               <Img fluid={data.download.childImageSharp.fluid} className="download" alt="Download my resume"></Img>
-            </Link>
+            </a>
           </div>
         </div>
         <div id="resume">
