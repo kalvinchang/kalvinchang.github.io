@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Notebook from "../../components/notebook"
 import Header from "../../components/header"
@@ -71,9 +71,9 @@ const ResumePage = (props) => {
           </div>
         </div>
         <div id="resume">
-          <Link to={data.resumePdf.publicURL}>
+          <a href={data.resumePdf.publicURL}>
             <Img fluid={data.resumePng.childImageSharp.fluid}alt="My resume"></Img>
-          </Link>
+          </a>
         </div>
       </>
     }
