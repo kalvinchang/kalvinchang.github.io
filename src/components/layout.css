@@ -16,6 +16,22 @@ body {
     background: #F2F2F2;
 }
 
+/* noto-sans-tc-100 - chinese-traditional */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('../fonts/noto-sans-tc-v10-chinese-traditional-100.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans TC Thin'), local('NotoSansTC-Thin'),
+       url('../fonts/noto-sans-tc-v10-chinese-traditional-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-tc-v10-chinese-traditional-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-tc-v10-chinese-traditional-100.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-tc-v10-chinese-traditional-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-tc-v10-chinese-traditional-100.svg#NotoSansTC') format('svg'); /* Legacy iOS */
+  unicode-range: U+4E00-9FFF;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -91,7 +107,7 @@ ul {
     margin-bottom: 2.5%;
     padding: 1% 5% 5% 5%;
     color: #0b0b0b;
-    font-family: 'Nanum Pen Script';
+    font-family: 'Noto Sans TC', 'Nanum Pen Script', sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
 }
