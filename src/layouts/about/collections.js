@@ -39,55 +39,43 @@ const AboutPage = (props) => {
       <Notebook
                 left={
                     <>
-                        <div>
-                          <h1>interests</h1>
-                          <ul>
-                            <li>food</li>
-                            <li>travel</li>
-                            <li>Mandarin</li>
-                            <li>+100 others with which i'm inconsistent xD</li>
-                          </ul>
-                        </div>
-                        <div>
-                          <h1>movies / dramas</h1>
-                          <ul>
-                            <li>Night Flight - my first BL movie!</li>
-                            <li>HIStory 2 越界</li>
-                            <li>HIStory 3 圈套</li>
-                            <li>Goblin</li>
-                            <li>牽牛花開的日子</li>
-                            <li>阿爸的願望</li>
-                            <li>花甲大人轉少年</li>
-                            <li>兩個爸爸</li>
-                            <li>Some Day or One Day 想見你</li>
-                          </ul>
-                        </div>
+                    <div>
+                      <h1>hello world</h1>
+                      <ul id="intro">
+                        <li>// taiwanese american</li>
+                        <li>// computer science</li>
+                        <li>// carnegie mellon '22</li>
+                        <li>// glen a wilson '18</li>
+                        <li>// he / him / his</li>
+                        <li>// pretending like i know what i'm doing</li>
+                        <li>// 我不知道我在幹嘛</li>
+                      </ul>
+                    </div>
+                        
                     </>
                 }
                 right={
                   <>
                     <div>
+                          <h1>interests</h1>
+                          <ul>
+                            <li>food</li>
+                            <li>travel</li>
+                            <li>human-computer interaction</li>
+                            <li>language technologies</li>
+                            <li>learning languages</li>
+                            <li>+100 others with which i'm inconsistent xD</li>
+                          </ul>
+                        </div>
+                        <div>
                           <h1>music</h1>
                           <ul>
                             <li>五月天 Mayday (since 2018)</li>
                             <li>BTS (since 2017)</li>
-                            <li>周杰倫 Jay Chou (since 2007?)</li>
                             <li>Ellie Goulding (since 2014)</li>
                             <li>OSTs from dramas</li>
                           </ul>
                         </div>
-                    <div>
-                      <h1>bucketlist</h1>
-                      <ul>
-                        <li>&lt;insert boring shit boring people want to do&gt;</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h1>travels</h1>
-                      <ul>
-                        <li>&lt;pretend like my world isn't small&gt;</li>
-                      </ul>
-                    </div>
                   </>
                 }
                 />

@@ -30,6 +30,13 @@ const Layout = (props) => (
           }
         }
       }
+      profile: file(relativePath: {eq: "images/profile.png"}) {
+        childImageSharp {
+          fixed(width: 200, height: 200) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       ruler: file(relativePath: {eq: "images/ruler.png"}) {
         childImageSharp {
           fluid(maxWidth: 1000, maxHeight: 108) {
@@ -66,27 +73,13 @@ const Layout = (props) => (
           <>
             <div id="belongs-to">
               <p>This notebook belongs to:</p>
-              <br />
               <Img fluid={data.name.childImageSharp.fluid}/>
-
+              <Img fixed={data.profile.childImageSharp.fixed}/>
               <br />
               <br />
               <p>If found, please return to:</p>
-              <br />
               <p>626 Main St, Los Angeles, CA 91745</p>
-              <br />
-              <p>台北市幸福路123巷0號4樓</p>
-            </div>
-
-            <div id='mini-bio'>
-              <p>los angeles • taipei</p>
-              <p>cs • carnegie mellon '22 • glen a wilson '18</p>
-              <p>he/him/his • 20</p>
-              <br />
-              <p>pretending like i know what i'm doing
-              </p>
-              <br />
-              <p>我不知道我在幹嘛</p>
+              <p>台北市幸福路8巷7號之一</p>
             </div>
           </>
         }/>

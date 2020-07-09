@@ -180,11 +180,11 @@ ul {
 #belongs-to {
   margin-top: 1rem;
   text-align: center;
+  line-height: 1.8;
 }
 
-#mini-bio {
-  position: absolute;
-  bottom: 12.5vh;
+#intro {
+  list-style: none;
 }
 
 /* contact */

@@ -63,17 +63,10 @@ const ResumePage3 = (props) => {
     }
     right={
       <>
-        <h3>awards</h3>
+        <h3>ftc robotics</h3>
         <ul>
-          <li>rank 1 / 400, valedictorian</li>
-          <li>national ap scholar</li>
-          <li>social studies dept. award</li>
-          <li>leadership &amp; service award</li>
-          <li>california biliteracy seal in spanish &amp; chinese</li>
-          <li>FIRST dean's list semifinalist</li>
-          <li>sophomore of the year</li>
+          <li>self-studied Java from Intro to Java by Daniel Liang</li>
         </ul>
-        
       </>
     }
   />
