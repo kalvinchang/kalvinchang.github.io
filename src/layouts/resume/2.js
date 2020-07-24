@@ -47,12 +47,25 @@ const ResumePage2 = (props) => {
     left={
       <>
         <h1 className="year">2018-2019</h1>
-        <h3>hopscotch <br /> health</h3>
+        <h3>sophomore <br />fall</h3>
+        <ul>
+          <li>Teaching Assis., 15-150 Princ. Functional Programming</li>
+          <li>11-411 Natural Language Processing</li>
+          <li>15-213 Intro to Computer Systems</li>
+          <li>05-391 Designing Human Centered Software</li>
+          <li>36-218 Probability Theory for Computer Scientists</li>
+          <li>33-104 Experimental Physics</li>
+        </ul>
+        <h3>hopscotch health</h3>
         <ul>
           <li>software engineering intern</li>
           <li>first software internship</li>
+          <li>startup in pittsburgh tackling tobacco cessation &amp; diet management in India</li>
         </ul>
-
+      </>
+    }
+    right={
+      <>
         <h3>freshman spring</h3>
         <ul>
           <li>15-150 Principles of Functional Programming</li>
@@ -61,10 +74,6 @@ const ResumePage2 = (props) => {
           <li>79-104 Global Histories</li>
           <li>76-101 Interpretation and Argument</li>
         </ul>
-      </>
-    }
-    right={
-      <>
         <h3>freshman fall</h3>
         <ul>
           <li>15-122 Principles of Imperative Computation (Data Structures)</li>

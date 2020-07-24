@@ -66,22 +66,23 @@ const Timeline = (props) => {
 
                 <h3>spring 2019</h3>
                 <ul>
-                  <li>ARCC Spring Theatre</li>
+                  <li>ARCC Spring Theatre - 孫悟空 in Journey to the West</li>
                 </ul>
 
                 <h3>summer 2019</h3>
                 <ul>
-                  <li>independence</li>
+                  <li>had a taste of financial independence</li>
                 </ul>
 
                 <h3>fall 2019</h3>
                 <ul>
-                  <li>passing in the family</li>
+                  <li>signed up for too many classes</li>
+                  <li>lost an important family member</li>
                 </ul>
 
                 <h3>spring 2020</h3>
                 <ul>
-                  <li>took semester off</li>
+                  <li>took spring semester off to intern</li>
                 </ul>
               </>
             }

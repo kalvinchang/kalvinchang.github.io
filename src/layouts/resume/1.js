@@ -5,7 +5,6 @@ import Notebook from "../../components/notebook"
 import Header from "../../components/header"
 import Nav from "../../components/nav"
 
-
 const ResumePage = (props) => {
   const data = useStaticQuery(graphql`
   query {
@@ -25,6 +24,13 @@ const ResumePage = (props) => {
     download: file(relativePath: {eq: "images/icons/download.png"}) {
       childImageSharp {
         fluid(maxWidth: 72, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    collage: file(relativePath: {eq: "images/piccollage.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 180, maxHeight: 180) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -83,17 +89,15 @@ const ResumePage = (props) => {
         <h3>piccollage</h3>
         <ul>
           <li>server developer intern</li>
+          <li>startup behind a photo/video editing app with a million monthly active users</li>
+          <li>dove deep into back end web development</li>
         </ul>
 
-        <h3>sophomore fall</h3>
-        <ul>
-          <li>Teaching Assis., 15-150 Princ. Functional Programming</li>
-          <li>11-411 Natural Language Processing</li>
-          <li>15-213 Intro to Computer Systems</li>
-          <li>05-391 Designing Human Centered Software</li>
-          <li>36-218 Probability Theory for Computer Scientists</li>
-          <li>33-104 Experimental Physics</li>
-        </ul>
+        {/* <img src={require('../../../static/images/washitape.png')} style={{width: "52vh", height: "10vh"}}></img> */}
+        <div className="polaroid" style={{ height: '52vh', width: '52vh', margin: '2rem auto' }}>
+          {/* <Img fluid={data.collage.childImageSharp.fluid}></Img> */}
+          <img src={require('../../../static/images/piccollage.png')} height="100%" width="100%"></img>
+        </div>
       </>
     }
   />
