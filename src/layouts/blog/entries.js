@@ -37,7 +37,7 @@ const BlogEntriesPage = (props) => {
           excerpt(pruneLength: 250)
           frontmatter {
             title
-            date(formatString: "MMM DD YYYY")
+            date(formatString: "MMM D YYYY")
           }
           fields {
             slug

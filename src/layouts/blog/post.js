@@ -23,8 +23,8 @@ const BlogPost = (props) => {
         }}>
         <div className='paper notepad'>
           <header>
+            <h3><span className="date">{frontmatter.date.toLowerCase()}</span></h3>
             <h1>{frontmatter.title}</h1>
-            <span className="date">{frontmatter.date}</span>
           </header>
           <MDXRenderer>{body}</MDXRenderer>
         </div>
@@ -38,7 +38,7 @@ query PostsBySlug($slug: String!) {
     body
     frontmatter {
       title
-      date(formatString: "MMM Do YYYY")
+      date(formatString: "MMMM D YYYY")
     }
   }
 
