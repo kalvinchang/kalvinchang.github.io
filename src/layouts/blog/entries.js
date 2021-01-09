@@ -37,7 +37,7 @@ const BlogEntriesPage = (props) => {
           excerpt(pruneLength: 250)
           frontmatter {
             title
-            date
+            date(formatString: "MMM DD YYYY")
           }
           fields {
             slug
@@ -59,12 +59,12 @@ const BlogEntriesPage = (props) => {
         margin: '10vh 0 0 0',
         }}>
         <div className='paper notepad'>
-          <h1 className="page-title">Index</h1>
+          <h1 className="page-title">index</h1>
           <ul className="dot-leaders">
           {data.posts.nodes.map(({ excerpt, id, frontmatter, fields }, index) => (
             // add page numbering that reflects length of post
             <li>
-              <p className="page">{index + 1}</p>
+              <p className="page">{frontmatter.date}</p>
               <a href={fields.slug} className="blog-title">{frontmatter.title}</a>
             </li>
           ))}
