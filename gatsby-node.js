@@ -28,9 +28,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(
-    'src/layouts/blog/post.js'
-  )
+  const blogPostTemplate = path.resolve('src/layouts/blog/post.js')
+  const tagTemplate = path.resolve('src/layouts/blog/tag.js')
+
   const pageKeys = Object.keys(pages);
   pageKeys.forEach((route, i) => {
     createPage({
@@ -57,6 +57,11 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+      tagsGroup: allMdx {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
@@ -81,6 +86,19 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+
+    const tags = result.data.tagsGroup.group
+    
+    // create page for each tag
+    tags.forEach(tag => {
+      createPage({
+        path: `/tags/${tag.fieldValue}/`,
+        component: tagTemplate,
+        context: {
+          tag: tag.fieldValue,
+        },
+      })
+    })  
   })
 }
 
