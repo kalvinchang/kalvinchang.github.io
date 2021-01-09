@@ -10,6 +10,7 @@ const pages = {
   '/resume': path.resolve("src/layouts/resume/1.js"),
   '/resume/2': path.resolve("src/layouts/resume/2.js"),
   '/resume/3': path.resolve("src/layouts/resume/3.js"),
+  '/resume/4': path.resolve("src/layouts/resume/4.js"),
   '/contact': path.resolve("src/layouts/contact.js"),
   '/blog': path.resolve("src/layouts/blog/entries.js"),
 }

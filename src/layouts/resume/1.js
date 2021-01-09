@@ -85,19 +85,16 @@ const ResumePage = (props) => {
     }
     right={
       <>
-        <h1 className="year">2019-20</h1>
-        <h3>piccollage</h3>
+        <h1 className="year">2020-2021</h1>
+        <h3>junior fall</h3>
         <ul>
-          <li>server developer intern</li>
-          <li>startup behind a photo/video editing app with a million monthly active users</li>
-          <li>dove deep into back end web development</li>
+          <li>Teaching Assis., 15-150 Princ. Functional Programming</li>
+          <li>11-492 Speech Processing</li>
+          <li>15-210 Parallel and Sequential Data Structures and Algorithms</li>
+          <li>05-333 Gadgets, Sensors, and Activity Recognition in HCI</li>
+          <li>17-200 Ethics and Policy Issues in Computing</li>
+          <li>82-283 Language Diversity and Cultural Identity</li>
         </ul>
-
-        {/* <img src={require('../../../static/images/washitape.png')} style={{width: "52vh", height: "10vh"}}></img> */}
-        <div className="polaroid" style={{ height: '52vh', width: '52vh', margin: '2rem auto' }}>
-          {/* <Img fluid={data.collage.childImageSharp.fluid}></Img> */}
-          <img src={require('../../../static/images/piccollage.png')} height="100%" width="100%"></img>
-        </div>
       </>
     }
   />

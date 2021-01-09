@@ -5,7 +5,7 @@ import Header from "../../components/header"
 import Nav from "../../components/nav"
 
 
-const ResumePage3 = (props) => {
+const ResumePage2 = (props) => {
   const data = useStaticQuery(graphql`
   query {
     resumePdf: file(relativePath: {eq: "resume.pdf"}) {
@@ -46,26 +46,42 @@ const ResumePage3 = (props) => {
   <Notebook 
     left={
       <>
-        <h1 className="year">high school</h1>
-        <h3><br /><br />glen a. wilson code</h3>
+        <h3>hopscotch health</h3>
         <ul>
-          <li>founder, president</li>
-          <li>first experience with leadership</li>
+          <li>software engineering intern</li>
+          <li>first software internship</li>
+          <li>startup in pittsburgh tackling tobacco cessation &amp; diet management in India</li>
         </ul>
-
-        <h3>aftermath</h3>
+        <h1 className="year">2019-2020</h1>
+        <h3>sophomore <br />fall</h3>
         <ul>
-          <li>project lead + full stack</li>
-          <li>first web app</li>
-          <li>first place, district ca-39, congressional app challenge</li>
+          <li>Teaching Assis., 15-150 Princ. Functional Programming</li>
+          <li>11-411 Natural Language Processing</li>
+          <li>15-213 Intro to Computer Systems</li>
+          <li>05-391 Designing Human Centered Software</li>
+          <li>36-218 Probability Theory for Computer Scientists</li>
+          <li>33-104 Experimental Physics</li>
         </ul>
       </>
     }
     right={
       <>
-        <h3>ftc robotics</h3>
+        <h1 className="year">2018-2019</h1>
+        <h3>freshman <br /> spring</h3>
         <ul>
-          <li>self-studied Java from Intro to Java by Daniel Liang</li>
+          <li>15-150 Principles of Functional Programming</li>
+          <li>15-251 Great Ideas in Theoretical Computer Science</li>
+          <li>05-392 Interaction Design Overview</li>
+          <li>79-104 Global Histories</li>
+          <li>76-101 Interpretation and Argument</li>
+        </ul>
+        <h3>freshman fall</h3>
+        <ul>
+          <li>15-122 Principles of Imperative Computation (Data Structures)</li>
+          <li>15-151 Mathematical Foundations of Computer Science (Intro Discrete Math)</li>
+          <li>21-241 Matrices and Linear Transformations (Linear Algebra)</li>
+          <li>08-180 Nature of Language (Intro Linguistics)</li>
+          <li>07-131 Great and Practical Ideas in Computer Science</li>
         </ul>
       </>
     }
@@ -74,4 +90,4 @@ const ResumePage3 = (props) => {
   )
 }
 
-export default ResumePage3
+export default ResumePage2
