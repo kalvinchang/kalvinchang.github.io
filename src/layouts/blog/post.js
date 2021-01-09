@@ -8,6 +8,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 const BlogPost = (props) => {
   const { data } = props
   const { frontmatter, body } = data.mdx
+  const { tags } = frontmatter
 
     return (
     <div id="blog-post">
@@ -25,6 +26,7 @@ const BlogPost = (props) => {
           <header>
             <h3><span className="date">{frontmatter.date.toLowerCase()}</span></h3>
             <h1>{frontmatter.title}</h1>
+            <ul className='tags'>{tags && tags.map(tag => <li><div><a href={'/tags/' + tag}>{tag}</a></div></li>)}</ul>
           </header>
           <MDXRenderer>{body}</MDXRenderer>
         </div>
@@ -39,6 +41,7 @@ query PostsBySlug($slug: String!) {
     frontmatter {
       title
       date(formatString: "MMMM D YYYY")
+      tags
     }
   }
 

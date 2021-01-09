@@ -3,8 +3,8 @@ import Header from "../../components/header"
 import Nav from "../../components/nav"
 
 const Tag = (props) => {
-  const { data } = props
-  const { tag } = props.pageContext
+  const { data, pageContext } = props
+  const { tag } = pageContext
 
   return (
     <div id="blog-list">
