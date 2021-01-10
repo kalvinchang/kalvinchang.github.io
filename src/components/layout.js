@@ -30,10 +30,10 @@ const Layout = (props) => (
           }
         }
       }
-      profile: file(relativePath: {eq: "images/profile.png"}) {
+      nameZh: file(relativePath: {eq: "images/name_zh.png"}) {
         childImageSharp {
-          fixed(width: 200, height: 200) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 200) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -74,12 +74,9 @@ const Layout = (props) => (
             <div id="belongs-to">
               <p>This notebook belongs to:</p>
               <Img fluid={data.name.childImageSharp.fluid}/>
-              <Img fixed={data.profile.childImageSharp.fixed}/>
-              <br />
-              <br />
-              <p>If found, please return to:</p>
-              <p>626 Main St, Los Angeles, CA 91745</p>
-              <p>台北市幸福路8巷7號之一</p>
+              <div style={{width: '30%', textAlign: 'center', display: 'block', margin: 'auto'}}>
+                <Img fluid={data.nameZh.childImageSharp.fluid}/>
+              </div>
             </div>
           </>
         }/>
