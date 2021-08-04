@@ -45,17 +45,16 @@ const AboutPage = (props) => {
                 <li>// taiwanese american, 626 native</li>
                 <li>// carnegie mellon '22, computer science</li>
                 <li>// he / him / his</li>
-                <li>// pretending like i know what i'm doing</li>
-                <li>// 我不知道我在幹嘛</li>
+                <li>// trying my best not to be a 廢物</li>
               </ul>
             </div>
             <div>
             <h1>interests</h1>
               <ul>
-                <li>food</li>
-                <li>travel</li>
+                <li>food + travel</li>
+                <li>learning languages (Taiwanese Hokkien at the moment)</li>
+                <li>Sinitic dialectology</li>
                 <li>language technologies</li>
-                <li>learning languages</li>
                 <li>+100 others with which i'm inconsistent xD</li>
               </ul>
             </div>

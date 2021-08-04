@@ -86,6 +86,16 @@ const ResumePage = (props) => {
     right={
       <>
         <h1 className="year">2020-2021</h1>
+
+        <h3>junior spring</h3>
+        <ul>
+          <li>15-591 Independent Study, LLab</li>
+          <li>15-451 Design and Analysis of Algorithms</li>
+          <li>11-688 Computational Forensics and AI</li>
+          <li>05-470 Digital Service Innovation</li>
+          <li>02-261 Quantitative Cell and Molecular Biology Lab</li>
+        </ul>
+
         <h3>junior fall</h3>
         <ul>
           <li>Teaching Assis., 15-150 Princ. Functional Programming</li>
