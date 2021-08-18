@@ -4,15 +4,9 @@ import Notebook from "../../components/notebook"
 import Header from "../../components/header"
 import Nav from "../../components/nav"
 
-
-const ResumePage3 = (props) => {
+const ResumePage = (props) => {
   const data = useStaticQuery(graphql`
   query {
-    resumePdf: file(relativePath: {eq: "resume.pdf"}) {
-      name
-      extension
-      publicURL
-    }
     ruler: file(relativePath: {eq: "images/ruler.png"}) {
       childImageSharp {
         fluid(maxWidth: 1000, maxHeight: 108) {
@@ -46,26 +40,26 @@ const ResumePage3 = (props) => {
   <Notebook 
     left={
       <>
-        <h1 className="year">high school</h1>
-        <h3><br /><br />glen a. wilson code</h3>
-        <ul>
-          <li>founder, president</li>
-          <li>first experience with leadership</li>
+        <h1>Carnegie Mellon</h1>
+        <h3>senior fall, 2021 (current)</h3>
+        <ul className="comments">
+          <li>// 15-440 Distributed Systems</li>
+          <li>// 11-711 Advanced Natural Language Processing</li>
+          <li>// 15-317 Constructive Logic</li>
+          <li>// 80-287 Language Variation and Change</li>
         </ul>
-
-        <h3>aftermath</h3>
         <ul>
-          <li>project lead + full stack</li>
-          <li>first web app</li>
-          <li>first place, district ca-39, congressional app challenge</li>
+          <li>first semester back on campus</li>
         </ul>
       </>
     }
     right={
       <>
-        <h3>ftc robotics</h3>
+        <h3>amazon, summer 2021</h3>
         <ul>
-          <li>self-studied Java from Intro to Java by Daniel Liang</li>
+          <li>team was responsible for EC2 Instance health checks</li>
+          <li>learned what it was like to work for a large company</li>
+          <li>continued diving deep into back end web dev</li>
         </ul>
       </>
     }
@@ -74,4 +68,4 @@ const ResumePage3 = (props) => {
   )
 }
 
-export default ResumePage3
+export default ResumePage

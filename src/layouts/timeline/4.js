@@ -1,39 +1,17 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import Notebook from "../../components/notebook"
 import Header from "../../components/header"
 import Nav from "../../components/nav"
 
-const ResumePage = (props) => {
+
+const ResumePage3 = (props) => {
   const data = useStaticQuery(graphql`
   query {
     resumePdf: file(relativePath: {eq: "resume.pdf"}) {
       name
       extension
       publicURL
-    }
-    resumePng: file(relativePath: {eq: "resume.png"}) {
-      publicURL
-      childImageSharp {
-        fluid(maxWidth: 450, maxHeight: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    download: file(relativePath: {eq: "images/icons/download.png"}) {
-      childImageSharp {
-        fluid(maxWidth: 72, maxHeight: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    collage: file(relativePath: {eq: "images/piccollage.png"}) {
-      childImageSharp {
-        fluid(maxWidth: 180, maxHeight: 180) {
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
     ruler: file(relativePath: {eq: "images/ruler.png"}) {
       childImageSharp {
@@ -68,22 +46,26 @@ const ResumePage = (props) => {
   <Notebook 
     left={
       <>
-        <h3>piccollage</h3>
+        <h1>high school</h1>
+        <h3>CODE</h3>
         <ul>
-          <li>server developer intern</li>
-          <li>startup behind a photo/video editing app with a million monthly active users</li>
-          <li>dove deep into back end web development</li>
+          <li>founder, president</li>
+          <li>filled the CS extracurricular void at my high school</li>
+          <li>mentored &amp; taught web dev + Java to 10+ budding coders</li>
+          <li>launched web dev + Java summer camp</li>
+          <li>first experience with leadership and did not know what I was doing at first</li>
+          <li>entered congressional app challenge, ACSL</li>
         </ul>
-
-        {/* <img src={require('../../../static/images/washitape.png')} style={{width: "52vh", height: "10vh"}}></img> */}
-        <div className="polaroid" style={{ height: '52vh', width: '52vh', margin: '2rem auto' }}>
-          {/* <Img fluid={data.collage.childImageSharp.fluid}></Img> */}
-          <img src={require('../../../static/images/piccollage.png')} height="100%" width="100%"></img>
-        </div>
       </>
     }
     right={
       <>
+        <h3>ftc robotics</h3>
+        <ul>
+          <li>self-studied Java from Intro to Java by Daniel Liang</li>
+          <li>taught 5 prospective programmers Java</li>
+          <li>realized I was not interested in mechanical engineering</li>
+        </ul>
       </>
     }
   />
@@ -91,4 +73,4 @@ const ResumePage = (props) => {
   )
 }
 
-export default ResumePage
+export default ResumePage3

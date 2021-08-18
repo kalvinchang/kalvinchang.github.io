@@ -183,7 +183,7 @@ ul {
   line-height: 1.8;
 }
 
-#intro {
+.comments {
   list-style: none;
 }
 
@@ -222,7 +222,7 @@ ul {
   height: 4.32vw;
   width: 6vw;
   position: absolute;
-  right: -.5vw;
+  right: 0;
 }
 
 .download {

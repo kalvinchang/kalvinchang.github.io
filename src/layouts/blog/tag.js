@@ -20,15 +20,14 @@ const Tag = (props) => {
         }}>
         <div className='paper notepad'>
           <h1 className="page-title">{tag}</h1>
-          <ul className="dot-leaders">
-          {data.posts.nodes.map(({ excerpt, id, frontmatter, fields }, index) => (
-            // add page numbering that reflects length of post
-            <li>
-              <p className="page">{frontmatter.date}</p>
+          <div className="notes-flexbox">
+            {data.posts.nodes.map(({ excerpt, id, frontmatter, fields }, index) => (
+            <div className="post-it">
               <a href={fields.slug} className="blog-title">{frontmatter.title}</a>
-            </li>
+              <p className="blog-date">{frontmatter.date}</p>
+            </div>
           ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>)

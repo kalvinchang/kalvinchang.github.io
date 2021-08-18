@@ -68,43 +68,49 @@ const ResumePage = (props) => {
   <Notebook 
     left={
       <>
-        <div style={{display: 'flex', justifyContent: 'space-between'}}>
-          <h1>Resume</h1>
-          <div className="download-link">
-            <a href={data.resumePdf.publicURL} download>
-              <Img fluid={data.download.childImageSharp.fluid} className="download" alt="Download my resume"></Img>
-            </a>
-          </div>
-        </div>
-        <div id="resume">
-          <a href={data.resumePdf.publicURL}>
-            <Img fluid={data.resumePng.childImageSharp.fluid}alt="My resume"></Img>
-          </a>
-        </div>
+        <h3>junior spring, 2021</h3>
+        <ul className="comments">
+          <li>// 15-591 Independent Study, LLab</li>
+          <li>// 15-451 Design and Analysis of Algorithms</li>
+          <li>// 11-688 Computational Forensics and AI</li>
+          <li>// 05-470 Digital Service Innovation</li>
+          <li>// 02-261 Quantitative Cell and Molecular Biology Lab</li>
+        </ul>
+        <ul>
+          <li>Zoom University</li>
+        </ul>
+
+        <br />
+        <h3>junior fall, 2020</h3>
+        <ul className="comments">
+          <li>// Teaching Assis., 15-150 Princ. Functional Programming</li>
+          <li>// 11-492 Speech Processing</li>
+          <li>// 15-210 Parallel and Sequential Data Structures and Algorithms</li>
+          <li>// 05-333 Gadgets, Sensors, and Activity Recognition in HCI</li>
+          <li>// 17-200 Ethics and Policy Issues in Computing</li>
+          <li>// 82-283 Language Diversity and Cultural Identity</li>
+        </ul>
+        <ul>
+          <li>Zoom University</li>
+        </ul>
       </>
     }
     right={
       <>
-        <h1 className="year">2020-2021</h1>
-
-        <h3>junior spring</h3>
+        <h3>PicCollage, feb - jul 2020</h3>
         <ul>
-          <li>15-591 Independent Study, LLab</li>
-          <li>15-451 Design and Analysis of Algorithms</li>
-          <li>11-688 Computational Forensics and AI</li>
-          <li>05-470 Digital Service Innovation</li>
-          <li>02-261 Quantitative Cell and Molecular Biology Lab</li>
+          <li>first deep dive into back end web development</li>
+          <li>photo/video editing app with a million MAU</li>
+          <li>enjoyed the office's open culture and small team feel</li>
+          <li>took a semester off to intern in Taiwan</li>
+          <li>left my 天龍人 bubble and explored Penghu, Taitung, Hualien, Tainan, Kaohsiung, Chiayi, Taichung</li>
         </ul>
 
-        <h3>junior fall</h3>
-        <ul>
-          <li>Teaching Assis., 15-150 Princ. Functional Programming</li>
-          <li>11-492 Speech Processing</li>
-          <li>15-210 Parallel and Sequential Data Structures and Algorithms</li>
-          <li>05-333 Gadgets, Sensors, and Activity Recognition in HCI</li>
-          <li>17-200 Ethics and Policy Issues in Computing</li>
-          <li>82-283 Language Diversity and Cultural Identity</li>
-        </ul>
+        {/* <img src={require('../../../static/images/washitape.png')} style={{width: "52vh", height: "10vh"}}></img> */}
+        <div className="polaroid" style={{ height: '45vh', width: '45vh', margin: '0.5rem auto' }}>
+          {/* <Img fluid={data.collage.childImageSharp.fluid}></Img> */}
+          <img src={require('../../../static/images/piccollage.png')} height="100%" width="100%"></img>
+        </div>
       </>
     }
   />

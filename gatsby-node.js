@@ -5,11 +5,12 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 // TODO: React hook
 const pages = {
   '/': path.resolve("src/layouts/index.js"),
-  '/about': path.resolve("src/layouts/about/collections.js"),
-  '/resume': path.resolve("src/layouts/resume/1.js"),
-  '/resume/2': path.resolve("src/layouts/resume/2.js"),
-  '/resume/3': path.resolve("src/layouts/resume/3.js"),
-  '/resume/4': path.resolve("src/layouts/resume/4.js"),
+  '/resume': path.resolve("src/layouts/about/resume.js"),
+  '/projects': path.resolve("src/layouts/projects/1.js"),
+  '/timeline': path.resolve("src/layouts/timeline/1.js"),
+  '/timeline/2': path.resolve("src/layouts/timeline/2.js"),
+  '/timeline/3': path.resolve("src/layouts/timeline/3.js"),
+  '/timeline/4': path.resolve("src/layouts/timeline/4.js"),
   '/contact': path.resolve("src/layouts/contact.js"),
   '/blog': path.resolve("src/layouts/blog/entries.js"),
 }

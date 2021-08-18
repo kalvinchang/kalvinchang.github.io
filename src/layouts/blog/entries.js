@@ -59,7 +59,7 @@ const BlogEntriesPage = (props) => {
         margin: '10vh 0 0 0',
         }}>
         <div className='paper' id="blog-list-paper">
-          <h1 className="page-title">brain dump</h1>
+          <h1 className="page-title">thoughts</h1>
           <div className="notes-flexbox">
             {data.posts.nodes.map(({ excerpt, id, frontmatter, fields }, index) => (
             <div className="post-it">
