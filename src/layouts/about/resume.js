@@ -63,9 +63,16 @@ const AboutPage = (props) => {
             <div>
               <h1>hello world</h1>
               <ul className="comments">
-                <li>// hello! I am a rising senior computer science major at Carnegie Mellon
-                  graduating in December 2021 looking for full-time software engineering
-                  opportunities. 
+                <li>// I am a fifth-year masters student at Carnegie Mellon University's 
+                  Language Technologies Institute advised by <a href="https://www.cs.cmu.edu/~dmortens/">David Mortensen</a>. 
+                  My work spans computational historical linguistics and Sinitic dialectology, with a focus on 
+                  computerizing the reconstruction of proto-languages under the comparative method.
+                  As a Machine Learning Intern at Amazon this summer, I will be exploring bias 
+                  in ASR performance across different dialects.
+                  I also have experience in back-end web development from my internships at Amazon Web Services 
+                  and PicCollage and from my undergraduate study in computer science, also at CMU. 
+                  I graduate May 2023 and am looking for full-time 
+                  opportunities in either software engineering or computational linguistics research. 
                 </li>
 
                 <li>// taiwanese american, 626 native</li>
@@ -77,9 +84,9 @@ const AboutPage = (props) => {
             <h1>interests</h1>
               <ul className="comments">
                 <li>// back end web development</li>
-                <li>// language technologies (comp. linguistics and NLP)</li>
+                <li>// computational historical linguistics</li>
                 <li>// learning languages (currently Taiwanese Hokkien)</li>
-                <li>// Sinitic dialectology</li>
+                <li>// Sinitic (Chinese) dialectology</li>
                 <li>// teaching + sharing knowledge</li>
                 <li>// Rilakkuma</li>
                 <li>// matcha</li>
