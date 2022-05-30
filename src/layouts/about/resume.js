@@ -80,7 +80,8 @@ const AboutPage = (props) => {
                 <li>// trying my best not to be a 廢物 (time waster)</li>
               </ul>
             </div>
-            <div>
+            {/* <div>
+            TODO: bring back this section after re-layout
             <h1>interests</h1>
               <ul className="comments">
                 <li>// back end web development</li>
@@ -91,7 +92,7 @@ const AboutPage = (props) => {
                 <li>// Rilakkuma</li>
                 <li>// matcha</li>
               </ul>
-            </div>
+            </div> */}
           </>
         }
         right={

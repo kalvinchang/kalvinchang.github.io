@@ -63,7 +63,7 @@ const ContactPage = (props) => {
       },
       instagram: {
         username: 'kalvin_1204',
-        url: 'https://instagram.com/kalvin_1204'
+        url: 'https://instagram.com/kalvin1204'
       },
       linkedin: {
         username: 'Kalvin Chang',
