@@ -5,7 +5,8 @@
   title={Self-supervised Speech Representations Still Struggle with African American Vernacular English},
   author={Chang, Kalvin and Chou, Yi-Hui and Shi, Jiatong and Chen, Hsuan-Ming and Holliday, Nicole and Scharenborg, Odette and Mortensen, David R},
   journal={arXiv preprint arXiv:2408.14262},
-  year={2024}
+  year={2024},
+  selected = {true},
 }
 
 @inproceedings{shim-etal-2024-phonotactic,
@@ -27,6 +28,7 @@
     url = "https://aclanthology.org/2024.lrec-main.1115",
     pages = "12734--12748",
     abstract = "Received wisdom in linguistic typology holds that if the structure of a language becomes more complex in one dimension, it will simplify in another, building on the assumption that all languages are equally complex (Joseph and Newmeyer, 2012). We study this claim on a micro-level, using a tightly-controlled sample of Dutch dialects (across 366 collection sites) and Min dialects (across 60 sites), which enables a more fair comparison across varieties. Even at the dialect level, we find empirical evidence for a tradeoff between word length and a computational measure of phonotactic complexity from a LSTM-based phone-level language model{---}a result previously documented only at the language level. A generalized additive model (GAM) shows that dialects with low phonotactic complexity concentrate around the capital regions, which we hypothesize to correspond to prior hypotheses that language varieties of greater or more diverse populations show reduced phonotactic complexity. We also experiment with incorporating the auxiliary task of predicting syllable constituency, but do not find an increase in the strength of the negative correlation observed.",
+    selected = {true},
 }
 
 @inproceedings{zouhar-etal-2024-pwesuite,
@@ -52,6 +54,7 @@
     url = "https://aclanthology.org/2024.lrec-main.1168",
     pages = "13344--13355",
     abstract = "Mapping words into a fixed-dimensional vector space is the backbone of modern NLP. While most word embedding methods successfully encode semantic information, they overlook phonetic information that is crucial for many tasks. We develop three methods that use articulatory features to build phonetically informed word embeddings. To address the inconsistent evaluation of existing phonetic word embedding methods, we also contribute a task suite to fairly evaluate past, current, and future methods. We evaluate both (1) intrinsic aspects of phonetic word embeddings, such as word retrieval and correlation with sound similarity, and (2) extrinsic performance on tasks such as rhyme and cognate detection and sound analogies. We hope our task suite will promote reproducibility and inspire future phonetic embedding research.",
+    selected = {true},
 }
 
 @inproceedings{chang-etal-2023-automating-sound,
@@ -79,6 +82,7 @@
     doi = "10.18653/v1/2023.lchange-1.14",
     pages = "129--142",
     abstract = "We describe a set of new methods to partially automate linguistic phylogenetic inference given (1) cognate sets with their respective protoforms and sound laws, (2) a mapping from phones to their articulatory features and (3) a typological database of sound changes.We train a neural network on these sound change data to weight articulatory distances between phones and predict intermediate sound change steps between historical protoforms and their modern descendants, replacing a linguistic expert in part of a parsimony-based phylogenetic inference algorithm. In our best experiments on Tukanoan languages, this method produces trees with a Generalized Quartet Distance of 0.12 from a tree that used expert annotations, a significant improvement over other semi-automated baselines. We discuss potential benefits and drawbacks to our neural approach and parsimony-based tree prediction. We also experiment with a minimal generalization learner for automatic sound law induction, finding it less effective than sound laws from expert annotation. Our code is publicly available.",
+    selected = {true},
 }
 
 
@@ -100,6 +104,7 @@
     doi = "10.18653/v1/2023.acl-short.3",
     pages = "24--38",
     abstract = "Protoform reconstruction is the task of inferring what morphemes or words appeared like in the ancestral languages of a set of daughter languages. Meloni et al (2021) achieved the state-of-the-art on Latin protoform reconstruction with an RNN-based encoder-decoder with attention model. We update their model with the state-of-the-art seq2seq model: the Transformer. Our model outperforms their model on a suite of different metrics on two different datasets: their Romance data of 8,000 cognates spanning 5 languages and a Chinese dataset (Hou 2004) of 800+ cognates spanning 39 varieties. We also probe our model for potential phylogenetic signal contained in the model. Our code is publicly available at \url{https://github.com/cmu-llab/acl-2023}.",
+    selected = {true},
 }
 
 @inproceedings{chang-etal-2022-wikihan,
@@ -136,6 +141,7 @@
     url = "https://aclanthology.org/2022.coling-1.314",
     pages = "3563--3569",
     abstract = "Most comparative datasets of Chinese varieties are not digital; however, Wiktionary includes a wealth of transcriptions of words from these varieties. The usefulness of these data is limited by the fact that they use a wide range of variety-specific romanizations, making data difficult to compare. The current work collects this data into a single constituent (IPA, or International Phonetic Alphabet) and structured form (TSV) for use in comparative linguistics and Chinese NLP. At the time of writing, the dataset contains 67,943 entries across 8 varieties and Middle Chinese. The dataset is validated on a protoform reconstruction task using an encoder-decoder cross-attention architecture (Meloni et al 2021), achieving an accuracy of 54.11{\%}, a PER (phoneme error rate) of 17.69{\%}, and a FER (feature error rate) of 6.60{\%}.",
+    selected = {true},
 }
 
 @inproceedings{chou2023evaluating,
@@ -144,7 +150,8 @@
   booktitle={2023 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)},
   pages={1--7},
   year={2023},
-  organization={IEEE}
+  organization={IEEE},
+  selected = {true},
 }
 
 
