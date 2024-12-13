@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Selected to attend the inaugural [SDAIA Winter School on multi-modal LLM](https://www.aiwinterschool.com/) as a Researcher to work on ASR for code-switching.
+Selected to attend the inaugural [SDAIA Winter School on multi-modal LLMs](https://www.aiwinterschool.com/) as a Researcher to work on ASR for code-switching.
