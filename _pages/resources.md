@@ -7,17 +7,17 @@ nav: true
 nav_order: 4
 ---
 
+## Talks
+
+- [Wilson Career Day](https://docs.google.com/presentation/d/1JQQDwLOfb6u9JHRaiLobSDIWG0wppL8qlTWm1AQs6ao/edit?usp=sharing) (10/26/26)
+- [AI: A Gentle Introduction](https://docs.google.com/presentation/d/1mrKZbs0PjZBElA046bP4B41qeP3_KWZn4vmHJtDJu30/edit?usp=sharing) — WilsonHacks (3/21/26)
+- [CS After High School](https://docs.google.com/presentation/d/1GGLLfr9G7NY5_nNj-5hpbO0BBPWqYFccgaesIZDjQV0/edit?usp=sharing) — WilsonHacks (4/1/23)
+
 ## Slides
 
 - [Spoken language models, speech tokenization, and speech generation](https://docs.google.com/presentation/d/1vCUJvsmxGzhLlKmR14fIT-nUbJQ7_VSFyTjhS6_i4tM/edit?usp=sharing)
 - [Flow matching and diffusion](https://docs.google.com/presentation/d/1C2kv_Fs53nlcVaR5GBpuzoiK5EgK6ubX3mWth9cHm_k/edit?usp=sharing)
 - [Post-training](https://docs.google.com/presentation/d/1Dd_OGKLiOjfPi17xhZ3ZrgMni31ZZ7gPqiwfQS9TTrk/edit?usp=sharing)
-
-## Talks
-
-- [AI: A Gentle Introduction](https://docs.google.com/presentation/d/1mrKZbs0PjZBElA046bP4B41qeP3_KWZn4vmHJtDJu30/edit?usp=sharing) — WilsonHacks (3/21/26)
-- [Wilson Career Day](https://docs.google.com/presentation/d/1JQQDwLOfb6u9JHRaiLobSDIWG0wppL8qlTWm1AQs6ao/edit?usp=sharing)
-- [CS After High School](https://docs.google.com/presentation/d/1GGLLfr9G7NY5_nNj-5hpbO0BBPWqYFccgaesIZDjQV0/edit?usp=sharing) — WilsonHacks (4/1/23)
 
 ## High school coding club
 
