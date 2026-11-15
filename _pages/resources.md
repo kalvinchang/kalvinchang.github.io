@@ -19,7 +19,7 @@ nav_order: 4
 - [Flow matching and diffusion](https://docs.google.com/presentation/d/1C2kv_Fs53nlcVaR5GBpuzoiK5EgK6ubX3mWth9cHm_k/edit?usp=sharing)
 - [Post-training](https://docs.google.com/presentation/d/1Dd_OGKLiOjfPi17xhZ3ZrgMni31ZZ7gPqiwfQS9TTrk/edit?usp=sharing)
 
-## High school coding club
+## [Glen A. Wilson CODE](https://www.instagram.com/gawhscode/)
 
 Here are the slides I made for my high school coding club/team.
 
