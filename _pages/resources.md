@@ -9,8 +9,8 @@ nav_order: 4
 
 ## Talks
 
-- [BAIR NLP Workshop](https://docs.google.com/presentation/d/1vvyIQ8BiFOVgx2cpKY3v1ls-MKGKyiex4xXxOM8zqA0/edit?usp=sharing) ([video](https://youtu.be/rTK0S5Bl1s0?t=10152))
 - [Wilson Career Day](https://docs.google.com/presentation/d/1JQQDwLOfb6u9JHRaiLobSDIWG0wppL8qlTWm1AQs6ao/edit?usp=sharing) (10/26/26)
+- [BAIR NLP Workshop](https://docs.google.com/presentation/d/1vvyIQ8BiFOVgx2cpKY3v1ls-MKGKyiex4xXxOM8zqA0/edit?usp=sharing) ([video](https://youtu.be/rTK0S5Bl1s0?t=10152)) (10/5/26)
 - [AI: A Gentle Introduction](https://docs.google.com/presentation/d/1mrKZbs0PjZBElA046bP4B41qeP3_KWZn4vmHJtDJu30/edit?usp=sharing) — WilsonHacks (3/21/26)
 - [CS After High School](https://docs.google.com/presentation/d/1GGLLfr9G7NY5_nNj-5hpbO0BBPWqYFccgaesIZDjQV0/edit?usp=sharing) — WilsonHacks (4/1/23)
 
